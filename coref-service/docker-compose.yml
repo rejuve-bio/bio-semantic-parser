@@ -1,0 +1,18 @@
+services:
+  coref-service:
+    build: .
+    image: bio-semantic-parser/coref-service:lingmess
+    container_name: coref-service
+    ports:
+      - "5000:5000"
+    environment:
+      COREF_MODEL: lingmess        # lingmess or fcoref
+      COREF_DEVICE: cpu            # cpu or cuda:0
+      COREF_RESOLVE_MODE: anaphora # anaphora or pronouns_only
+      COREF_PRELOAD: "true"
+      HF_HUB_DISABLE_XET: "1"
+    volumes:
+      - coref-models:/models       # cache the downloaded model weights
+
+volumes:
+  coref-models:
