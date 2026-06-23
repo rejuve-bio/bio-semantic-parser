@@ -14,7 +14,7 @@ import instructor
 from openai import OpenAI
 
 from .taxonomy import TAXONOMY, RelationType, EntityType
-from .pydantic_model import BiologicalRelation, ExtractionResult
+from .pydantic_model import ExtractionResult
 
 
 # ── LLM client ────────────────────────────────────────────────────────────────
@@ -41,7 +41,12 @@ def _client() -> object:
 
 # ── Taxonomy prompt block ─────────────────────────────────────────────────────
 
+_TAXONOMY_BLOCK: str = ""
+
 def _taxonomy_block() -> str:
+    global _TAXONOMY_BLOCK
+    if _TAXONOMY_BLOCK:
+        return _TAXONOMY_BLOCK
     lines = ["RELATION TAXONOMY — use exactly these types, nothing else:\n"]
     for rel, entry in TAXONOMY.items():
         lines.append(f"  {rel.value}")
@@ -49,7 +54,8 @@ def _taxonomy_block() -> str:
         lines.append(f"    Example    : {entry['example']}")
         lines.append(f"    Not this   : {entry['not_this']}")
         lines.append("")
-    return "\n".join(lines)
+    _TAXONOMY_BLOCK = "\n".join(lines)
+    return _TAXONOMY_BLOCK
 
 
 # ── Extraction prompt ─────────────────────────────────────────────────────────
@@ -149,8 +155,8 @@ def extract(chunk: dict) -> ExtractionResult:
                 messages.append({
                     "role":    "user",
                     "content": (
-                        f"Schema validation failed: {last_error}\n"
-                        "Fix the specific field mentioned and retry. "
+                        f"Attempt failed: {last_error}\n"
+                        "If this was a schema validation error, fix the specific field mentioned and retry. "
                         "Valid relation types: "
                         + ", ".join(r.value for r in RelationType)
                     ),
