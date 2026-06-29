@@ -44,8 +44,9 @@ class CorefResolver:
         # mentions LingMess missed (see _merge_clusters). Requires S2E_MODEL_PATH.
         self.cascade = self.model_name == "cascade"
         self.primary_name = "lingmess" if self.cascade else self.model_name
-        self._model = None   # primary fastcoref model
-        self._s2e = None     # optional secondary s2e resolver (cascade only)
+        self._model = None      # primary fastcoref model
+        self._s2e = None        # optional secondary s2e resolver (cascade only)
+        self._s2e_warned = False
 
     def load(self):
         if self._model is None:
@@ -57,19 +58,23 @@ class CorefResolver:
                 from fastcoref import LingMessCoref
                 self._model = LingMessCoref(device=self.device)
 
+        # Retry on each call so a checkpoint that arrives later (e.g. a background
+        # download) is picked up without a restart.
         if self.cascade and self._s2e is None:
             from app.s2e_resolver import S2EResolver
             s2e = S2EResolver(device=self.device)
             if not s2e.configured:
-                logger.warning(
-                    "Cascade requested but S2E_MODEL_PATH is unset/missing; "
-                    "falling back to %s only.", self.primary_name
-                )
+                if not self._s2e_warned:
+                    logger.warning(
+                        "Cascade: s2e checkpoint not ready at %s; serving %s only for now.",
+                        s2e.model_path, self.primary_name,
+                    )
+                    self._s2e_warned = True
             else:
                 try:
                     s2e.load()
                     self._s2e = s2e
-                    logger.info("Cascade ready: %s -> s2e-coref", self.primary_name)
+                    logger.info("Cascade active: %s -> s2e-coref", self.primary_name)
                 except Exception:
                     logger.exception(
                         "s2e-coref failed to load; continuing with %s only.",

@@ -31,8 +31,8 @@ COPY entrypoint.sh .
 
 EXPOSE 5000
 
-# Long start-period: cascade's first boot may download the s2e checkpoint (~1.6 GB).
-HEALTHCHECK --interval=30s --timeout=10s --start-period=900s --retries=3 \
+# start-period covers first-boot model load (s2e downloads in the background).
+HEALTHCHECK --interval=30s --timeout=10s --start-period=300s --retries=3 \
   CMD curl -fsS http://localhost:5000/health || exit 1
 
 ENTRYPOINT ["bash", "/app/entrypoint.sh"]

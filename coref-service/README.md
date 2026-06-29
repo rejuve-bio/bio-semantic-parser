@@ -22,10 +22,14 @@ make health      # check it's alive  ("s2e_active": true in cascade)
 make resolve     # resolve a sample sentence
 ```
 
-On the **first** cascade start the s2e checkpoint (~1.6 GB) is downloaded
-automatically into the `coref-models` volume; later starts reuse it (so the first
-boot is slow — watch `make logs`). If the download fails it logs a warning and
-**falls back to LingMess only**; `s2e_active` in `/health` shows which is live.
+The API has no `/` page — use `/docs`, `/health`, or `/resolve`.
+
+On the first cascade start the s2e checkpoint (~1.9 GB) downloads **in the
+background**: the service is usable on LingMess right away, and the s2e stage
+activates automatically once the download lands (no restart). Watch `make logs`,
+and check `s2e_active` in `/health`. The checkpoint is cached in the
+`coref-models` volume, so later starts skip the download. If it fails, the
+service stays **LingMess only**.
 
 To run the lighter LingMess-only service and skip the download:
 
