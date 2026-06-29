@@ -66,7 +66,7 @@ class CorefResolver:
             if not s2e.configured:
                 if not self._s2e_warned:
                     logger.warning(
-                        "Cascade: s2e checkpoint not ready at %s; serving %s only for now.",
+                        "Cascade: s2e checkpoint not available at %s; using %s only.",
                         s2e.model_path, self.primary_name,
                     )
                     self._s2e_warned = True

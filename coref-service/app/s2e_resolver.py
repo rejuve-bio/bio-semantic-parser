@@ -1,10 +1,9 @@
-"""Inference wrapper around the vendored s2e-coref model.
+"""Inference wrapper for the s2e-coref model.
 
-The upstream repo only ships dataset-level evaluation; it has no raw-text entry
-point. This adds one: tokenise while tracking character spans, run the model,
-decode antecedents like s2e's ``eval.py``, and map token spans back to character
-offsets. Clusters come out as ``[[(char_start, char_end), ...], ...]`` — the same
-shape the LingMess path produces, so the two merge uniformly.
+Tokenises the input while tracking character offsets, runs the model, decodes
+antecedents into clusters, and maps the predicted token spans back to character
+spans. Clusters are returned as ``[[(char_start, char_end), ...], ...]``, matching
+the format produced by the LingMess resolver so the two can be merged.
 """
 
 from __future__ import annotations
@@ -75,8 +74,8 @@ class S2EResolver:
         if not os.path.isfile(os.path.join(self.model_path, "config.json")):
             config_src = self.tokenizer_name
         config = LongformerConfig.from_pretrained(config_src)
-        # Longformer has no SDPA path; newer transformers (>=4.36) require asking
-        # for "eager" explicitly. Harmless no-op on the pinned transformers 4.30.2.
+        # Longformer requires the eager attention implementation; transformers
+        # >=4.36 must be told explicitly. Ignored by the pinned transformers 4.30.2.
         config._attn_implementation = "eager"
         model = S2E(config=config, args=S2E_ARGS)
 

@@ -1,7 +1,7 @@
-"""Subset of yuvalkirstain/s2e-coref `utils.py` needed for inference.
+"""Inference helpers vendored from yuvalkirstain/s2e-coref (MIT).
 
-Only the cluster/tensor helpers used by `modeling.py` and the decode step are
-kept; the training/eval helpers (which pulled in gitpython) are dropped.
+Contains only the cluster and tensor utilities required by ``modeling.py`` and the
+decode step; the training and evaluation helpers are omitted.
 """
 
 import torch
