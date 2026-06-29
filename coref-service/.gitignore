@@ -6,3 +6,4 @@ venv/
 # s2e checkpoint is mounted at runtime, never committed (see README)
 s2e-model/
 *.bin
+.pytest_cache/

@@ -1,16 +1,12 @@
 """Subset of yuvalkirstain/s2e-coref `utils.py` needed for inference.
 
 Only the cluster/tensor helpers used by `modeling.py` and the decode step are
-kept; the training/eval-metadata helpers (which pulled in gitpython) are dropped.
+kept; the training/eval helpers (which pulled in gitpython) are dropped.
 """
 
 import torch
 
-from .consts import NULL_ID_FOR_COREF
-
-
-def flatten_list_of_lists(lst):
-    return [elem for sublst in lst for elem in sublst]
+NULL_ID_FOR_COREF = 0
 
 
 def extract_clusters(gold_clusters):
