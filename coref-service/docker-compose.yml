@@ -1,24 +1,24 @@
-
 services:
   coref-service:
-    # Pulls the prebuilt image (no local build needed): docker compose pull && docker compose up -d
+    # Pull the prebuilt image, or build locally with `docker compose build`.
     image: ghcr.io/lnamty/coref-service:lingmess
-    build: .   # only used if you build locally with: docker compose build
+    build: .
     container_name: coref-service
     ports:
       - "5000:5000"
+    # Values come from your shell or a local .env file (see .env.example).
+    # Default = LingMess. For the cascade, set COREF_MODEL=cascade and run
+    # `make download-s2e` (or `make cascade`) — no edits to this file needed.
     environment:
-      COREF_MODEL: lingmess        # lingmess | fcoref | cascade
-      COREF_DEVICE: cpu            # cpu or cuda:0
-      COREF_RESOLVE_MODE: anaphora # anaphora or pronouns_only
+      COREF_MODEL: ${COREF_MODEL:-lingmess}        # lingmess | fcoref | cascade
+      COREF_DEVICE: ${COREF_DEVICE:-cpu}           # cpu or cuda:0
+      COREF_RESOLVE_MODE: ${COREF_RESOLVE_MODE:-anaphora}
       COREF_PRELOAD: "true"
       HF_HUB_DISABLE_XET: "1"
-      # For COREF_MODEL=cascade, mount the s2e checkpoint and point at it:
-      # S2E_MODEL_PATH: /models/s2e
+      S2E_MODEL_PATH: ${S2E_MODEL_PATH:-}          # set to /models/s2e for cascade
     volumes:
-      - coref-models:/models       # cache the downloaded model weights
-      # Mount the s2e checkpoint dir (pytorch_model.bin + config.json) for cascade:
-      # - ./s2e-model:/models/s2e:ro
+      - coref-models:/models        # cached model weights
+      - ./s2e-model:/models/s2e:ro  # s2e checkpoint (empty & ignored unless cascade)
 
 volumes:
   coref-models:

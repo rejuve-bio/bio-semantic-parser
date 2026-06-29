@@ -59,7 +59,7 @@ def health():
         "cascade": resolver.cascade,
         # In cascade mode, whether the s2e second stage actually loaded. False
         # means S2E_MODEL_PATH is unset/invalid and the service runs LingMess-only.
-        "s2e_active": resolver._s2e is not None,
+        "s2e_active": resolver.s2e_active,
     }
 
 

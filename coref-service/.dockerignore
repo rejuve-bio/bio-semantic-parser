@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.git/
+.gitignore
+tests/
+s2e-model/
+*.bin
+*.zip
+README.md
+Makefile
+scripts/

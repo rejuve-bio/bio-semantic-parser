@@ -63,7 +63,14 @@ class S2EResolver:
 
     @property
     def configured(self) -> bool:
-        return bool(self.model_path) and os.path.isdir(self.model_path)
+        """True only when the checkpoint file is actually present.
+
+        Checking the file (not just the directory) means an empty mounted volume
+        degrades to a clean LingMess-only fallback instead of a load traceback.
+        """
+        return bool(self.model_path) and os.path.isfile(
+            os.path.join(self.model_path, "pytorch_model.bin")
+        )
 
     @property
     def ready(self) -> bool:

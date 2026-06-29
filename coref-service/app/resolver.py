@@ -80,6 +80,11 @@ class CorefResolver:
     def ready(self) -> bool:
         return self._model is not None
 
+    @property
+    def s2e_active(self) -> bool:
+        """True when the s2e second stage is loaded (cascade mode + valid checkpoint)."""
+        return self._s2e is not None
+
     def resolve(self, text: str) -> str:
         if not text or not text.strip():
             return text
