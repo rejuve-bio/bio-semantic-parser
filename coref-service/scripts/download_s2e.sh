@@ -24,8 +24,17 @@ tmp="$(mktemp -d)/s2e.zip"
 curl -L --fail --retry 5 --retry-delay 5 -o "$tmp" "$URL"
 
 echo "Extracting ..."
+# unzip exits 1 on benign warnings (Dropbox folder zips carry a "/" root entry);
+# only >1 is a real error, so don't let set -e abort on a successful extract.
+set +e
 unzip -o -q "$tmp" -d "$DEST"
+rc=$?
+set -e
 rm -f "$tmp"
+if [ "$rc" -gt 1 ]; then
+  echo "✗ unzip failed (exit $rc)" >&2
+  exit 1
+fi
 
 # The archive may nest the files one folder deep — flatten if so.
 if [ ! -f "$DEST/pytorch_model.bin" ]; then
