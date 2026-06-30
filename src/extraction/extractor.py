@@ -368,7 +368,7 @@ def extract_batch(chunks: list) -> list:
     _completed: dict = {}
     if _progress_path.exists():
         try:
-            for line in _progress_path.read_text().splitlines():
+            for line in _progress_path.read_text(encoding="utf-8").splitlines():
                 entry = _json.loads(line)
                 _completed[entry["chunk_index"]] = entry["result"]
         except Exception:
