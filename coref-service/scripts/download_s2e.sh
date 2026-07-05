@@ -11,6 +11,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEST="${1:-$SCRIPT_DIR/../s2e-model}"
 URL="https://www.dropbox.com/sh/7hpw662xylbmi5o/AAC3nfP4xdGAkf0UkFGzAbrja?dl=1"
+EXPECTED_SHA256="${S2E_SHA256:-}"
 
 mkdir -p "$DEST"
 
@@ -22,6 +23,15 @@ fi
 echo "Downloading s2e-coref checkpoint (~1.6 GB) into $DEST ..."
 tmp="$(mktemp -d)/s2e.zip"
 curl -L --fail --retry 5 --retry-delay 5 -o "$tmp" "$URL"
+
+if [ -n "$EXPECTED_SHA256" ]; then
+  if command -v sha256sum >/dev/null 2>&1; then
+    echo "${EXPECTED_SHA256}  ${tmp}" | sha256sum -c -
+  else
+    echo "✗ sha256sum not found; cannot verify S2E_SHA256." >&2
+    exit 1
+  fi
+fi
 
 echo "Extracting ..."
 # unzip exits 1 on benign warnings (Dropbox folder zips carry a "/" root entry);
