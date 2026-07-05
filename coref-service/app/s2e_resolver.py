@@ -115,6 +115,13 @@ class S2EResolver:
             return_attention_mask=True,
             return_tensors="pt",
         )
+        # Ensure tok2word aligns with the model sequence length (special tokens + truncation).
+        seq_len = int(encoded["input_ids"].size(1))
+        if len(token_idx_to_word_idx) >= seq_len:
+            token_idx_to_word_idx = token_idx_to_word_idx[:seq_len]
+        else:
+            last_word = max(len(words) - 1, 0)
+            token_idx_to_word_idx.extend([last_word] * (seq_len - len(token_idx_to_word_idx)))
         return (
             encoded["input_ids"].to(self.device),
             encoded["attention_mask"].to(self.device),
