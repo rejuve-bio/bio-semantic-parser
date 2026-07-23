@@ -122,6 +122,7 @@ def tag_entities(text: str) -> list[dict]:
         return []
 
     threshold = float(os.getenv("HF_NER_THRESHOLD", "0.80"))
+    model_name = os.getenv("HF_NER_MODEL", "d4data/biomedical-ner-all")
 
     try:
         pipe    = _get_pipeline()
@@ -185,15 +186,17 @@ def tag_entities(text: str) -> list[dict]:
         seen.add(key)
 
         entities.append({
-            "text":       word,
-            "normalized": key,
-            "label":      entity_type,
-            "start":      start,
-            "end":        end,
-            "negated":    False,
-            "assertion":  "PRESENT",
-            "confidence": round(score, 3),
-            "source":     "hf_ner",
+            "text":           word,
+            "normalized":     key,
+            "label":          entity_type,
+            "start":          start,
+            "end":            end,
+            "negated":        False,
+            "assertion":      "PRESENT",
+            "ner_confidence": round(score, 3),
+            "confidence":     round(score, 3),
+            "source":         "hf_ner",
+            "source_model":   model_name,
         })
 
     return entities

@@ -1,5 +1,5 @@
 #!/bin/bash
-# ── Bio Semantic Parser — Docker Entrypoint ───────────────────────────────────
+# Bio Semantic Parser — Docker Entrypoint
 # Downloads NLP models on first startup if not already present.
 # Models are cached in /root/.cache (mount from host to persist).
 
@@ -7,14 +7,14 @@ set -e
 
 echo "=== Bio Semantic Parser starting ==="
 
-# ── scispaCy models — pre-installed in Docker image, just verify ──────────────
+# scispaCy models — pre-installed in Docker image, just verify
 for PKG in en_core_sci_lg en_ner_bc5cdr_md en_ner_jnlpba_md en_ner_bionlp13cg_md en_ner_craft_md; do
     python -c "import importlib; importlib.import_module('${PKG//-/_}')" 2>/dev/null \
         && echo "  ✓ ${PKG}" \
         || echo "  ✗ ${PKG} missing — image may need rebuild"
 done
 
-# ── HuggingFace models ────────────────────────────────────────────────────────
+# HuggingFace models
 HF_CACHE="/root/.cache/huggingface"
 
 _hf_ensure() {
@@ -51,6 +51,20 @@ if [ "${HF_NER_ENABLED:-true}" = "true" ]; then
 fi
 
 _hf_ensure "cross-encoder/nli-MiniLM2-L6-H768" "Negation model (cross-encoder/nli-MiniLM2-L6-H768)"
+
+# GLiNER model
+echo "  Checking GLiNER model..."
+python -c "
+from gliner import GLiNER
+mid = 'Ihor/gliner-biomed-large-v1.0'
+try:
+    GLiNER.from_pretrained(mid)
+    print(f'  ✓ {mid} cached')
+except Exception:
+    print(f'  ↓ Downloading {mid}...')
+    GLiNER.from_pretrained(mid)
+    print(f'  ✓ {mid} ready')
+" 2>/dev/null || echo "  ⚠ GLiNER not available — will download at runtime"
 
 echo "=== Models ready — starting server ==="
 exec "$@"
