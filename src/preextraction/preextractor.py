@@ -1,9 +1,15 @@
 """
 Layer 4 — Pre-Extraction Orchestrator
+
+Runs three scispaCy NER models in ensemble, merges spans, applies PubTator3
+normalization for PubMed articles, then classifies each entity's containing
+clause for negation using an NLI cross-encoder.
 """
 import os
 import spacy
-
+from flair.nn import Classifier
+from flair.data import Sentence
+from gliner import GLiNER
 from src.preextraction.ner_tagger import NERTagger
 from src.preextraction.negation_detector import NegationDetector
 from src.preextraction.doi_extractor import DOIExtractor
@@ -65,7 +71,7 @@ class Preextractor:
         for start, end, label in span_data:
             span = base_doc.char_span(start, end, label=label, alignment_mode="expand")
             if span is not None:
-                all_spans.append(span)
+                final_ents.append(span)
 
         base_doc.ents = spacy.util.filter_spans(all_spans)
         return base_doc
