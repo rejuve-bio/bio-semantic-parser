@@ -1,0 +1,228 @@
+{
+  "pmc_id": "PMC8160999",
+  "input_file": "data/ner_comparison/PMC8160999_20260726_203105.json",
+  "timestamp": "20260726_203105",
+  "chunks_processed": 1,
+  "evaluation_method": "ensemble_consensus_2plus",
+  "overall_metrics": {
+    "total_unique_entities": 149,
+    "consensus_count": 51,
+    "scispacy": {
+      "total_count": 111,
+      "exclusive_count": 60,
+      "avg_span_len": 12.5,
+      "overlap_ratio": 0.459
+    },
+    "hunflair": {
+      "total_count": 89,
+      "exclusive_count": 38,
+      "avg_span_len": 13.1,
+      "overlap_ratio": 0.573
+    },
+    "exclusive_gains": {
+      "scispacy_only": [
+        "93t449 cells",
+        "[14]",
+        "[14] claimed",
+        "[14] reported",
+        "[14],",
+        "[16] to",
+        "[3]",
+        "[4] also",
+        "[8",
+        "[9].",
+        "a. cordifolia leaves",
+        "aeruginosa",
+        "agri-food-pharma",
+        "alimentary tract",
+        "anticancer",
+        "bioactive molecules",
+        "bone tissue",
+        "breast cancer cell lines",
+        "ca binding sites",
+        "ca-\u03b2-lgtgase complexes"
+      ],
+      "hunflair_only": [
+        "3t3-l1",
+        "75",
+        "93t449",
+        "a. cordifolia",
+        "aspergillus niger",
+        "breast cancer.liposarcoma",
+        "ca",
+        "ca-\u03b2-lgtgase",
+        "capsicum annuum",
+        "carmagnola selezionata",
+        "carmagnola selezionataerous",
+        "dorycnium pentaphyllum subsp. haussknechtii",
+        "eif-2\u03b1",
+        "eletta campana",
+        "ellagic acid.overall",
+        "ellagic acidn",
+        "essential oils",
+        "hemp",
+        "hemp essential oil",
+        "human"
+      ]
+    },
+    "comparison_lenses": {
+      "net_entity_yield": {
+        "scispacy_gain": 60,
+        "hunflair_gain": 38,
+        "total_unique_entities": 149,
+        "formula": {
+          "scispacy": "Entities_scispacy \\ Entities_hunflair",
+          "hunflair": "Entities_hunflair \\ Entities_scispacy"
+        }
+      },
+      "category_specific_coverage_shift": {
+        "scispacy_total": 111,
+        "hunflair_total": 89,
+        "consensus_count": 51,
+        "exclusive_gains": {
+          "scispacy_only": [
+            "93t449 cells",
+            "[14]",
+            "[14] claimed",
+            "[14] reported",
+            "[14],",
+            "[16] to",
+            "[3]",
+            "[4] also",
+            "[8",
+            "[9].",
+            "a. cordifolia leaves",
+            "aeruginosa",
+            "agri-food-pharma",
+            "alimentary tract",
+            "anticancer",
+            "bioactive molecules",
+            "bone tissue",
+            "breast cancer cell lines",
+            "ca binding sites",
+            "ca-\u03b2-lgtgase complexes"
+          ],
+          "hunflair_only": [
+            "3t3-l1",
+            "75",
+            "93t449",
+            "a. cordifolia",
+            "aspergillus niger",
+            "breast cancer.liposarcoma",
+            "ca",
+            "ca-\u03b2-lgtgase",
+            "capsicum annuum",
+            "carmagnola selezionata",
+            "carmagnola selezionataerous",
+            "dorycnium pentaphyllum subsp. haussknechtii",
+            "eif-2\u03b1",
+            "eletta campana",
+            "ellagic acid.overall",
+            "ellagic acidn",
+            "essential oils",
+            "hemp",
+            "hemp essential oil",
+            "human"
+          ]
+        }
+      },
+      "high_confidence_consensus_precision_proxy": {
+        "true_positive_proxy": 51,
+        "scispacy_precision_proxy": 0.459,
+        "hunflair_precision_proxy": 0.573,
+        "note": "Uses the model intersection as a strict proxy for true positives; no confidence score is available in the current input files."
+      },
+      "span_precision_and_boundary_quality": {
+        "scispacy_avg_span_len": 12.5,
+        "hunflair_avg_span_len": 13.1
+      }
+    }
+  },
+  "per_label_metrics": {
+    "CELL_LINE": {
+      "consensus_count": 1,
+      "models": {
+        "scispacy": {
+          "precision": 0.167,
+          "recall": 1.0,
+          "f1": 0.286,
+          "count": 6
+        },
+        "hunflair": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "count": 4
+        }
+      }
+    },
+    "CHEMICAL": {
+      "consensus_count": 9,
+      "models": {
+        "scispacy": {
+          "precision": 0.643,
+          "recall": 1.0,
+          "f1": 0.783,
+          "count": 14
+        },
+        "hunflair": {
+          "precision": 0.409,
+          "recall": 1.0,
+          "f1": 0.581,
+          "count": 22
+        }
+      }
+    },
+    "DISEASE": {
+      "consensus_count": 5,
+      "models": {
+        "scispacy": {
+          "precision": 0.417,
+          "recall": 1.0,
+          "f1": 0.588,
+          "count": 12
+        },
+        "hunflair": {
+          "precision": 0.417,
+          "recall": 1.0,
+          "f1": 0.588,
+          "count": 12
+        }
+      }
+    },
+    "GENE_OR_GENE_PRODUCT": {
+      "consensus_count": 2,
+      "models": {
+        "scispacy": {
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8,
+          "count": 3
+        },
+        "hunflair": {
+          "precision": 0.091,
+          "recall": 1.0,
+          "f1": 0.167,
+          "count": 22
+        }
+      }
+    },
+    "ORGANISM": {
+      "consensus_count": 6,
+      "models": {
+        "scispacy": {
+          "precision": 0.857,
+          "recall": 1.0,
+          "f1": 0.923,
+          "count": 7
+        },
+        "hunflair": {
+          "precision": 0.207,
+          "recall": 1.0,
+          "f1": 0.343,
+          "count": 29
+        }
+      }
+    }
+  }
+}

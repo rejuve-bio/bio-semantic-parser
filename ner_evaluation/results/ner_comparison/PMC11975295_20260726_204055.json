@@ -1,0 +1,1683 @@
+{
+  "pmc_id": "PMC11975295",
+  "timestamp": "20260726_204055",
+  "chunks": 4,
+  "fetcher_version": "production",
+  "coref_resolution": true,
+  "coref_url": "http://202.181.159.222:8081",
+  "scispacy": [
+    {
+      "text": "Alzheimer's disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurodegenerative disorder",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive decline",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "memory loss",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dementia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's is the shift",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "disease",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's, focusing on disease-modifying therapies",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "patients",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "people",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "death",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "disability",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Women",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "deaths",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "patient",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alois Alzheimer",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid plaques",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurofibrillary tangles",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "acetylcholine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cholinergic",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cholinesterase",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tacrine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Cognex",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "donepezil",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Aricept",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "rivastigmine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Exelon",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "galantamine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Razadyne",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid cascade",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid-beta plaques",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid-beta",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid plaques from the brain",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-amyloid monoclonal antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mAbs",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Biogen",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Cambridge",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "MA",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Eisai",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid positron",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Eli",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-amyloid mAbs",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "MoA",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid PET",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid-related imaging abnormalities",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ARIA",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "monoclonal antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "MCI",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD dementia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mAb",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Aducanumab",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BIIB037",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "monoclonal auto-antibody",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "N-terminal epitope",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "amino acids 3\u20137 of",
+      "label": "AMINO_ACID",
+      "source": "scispacy"
+    },
+    {
+      "text": "A\u03b242",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "fibrillar aggregates",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "FDA",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "DMT",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "UAE",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid PET or cerebrospinal fluid",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "intravenous",
+      "label": "IMMATERIAL_ANATOMICAL_ENTITY",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-amyloid antibody",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "beta-amyloid",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "monoclonal antibody",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "enzyme acetylcholinesterase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Memantine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "NMDA receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD) symptoms",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "glutamate",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal damage",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurons",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NMDA",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "tau",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain health",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "fruits",
+      "label": "ORGANISM_SUBDIVISION",
+      "source": "scispacy"
+    },
+    {
+      "text": "vegetables",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "grains",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "fish",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "fats",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurotrophic factors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuron",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "APOE4 allele",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain 18,19,26",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CSF",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracellular amyloid-beta",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "plaques",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "intracellular neurofibrillary tangles",
+      "label": "IMMATERIAL_ANATOMICAL_ENTITY",
+      "source": "scispacy"
+    },
+    {
+      "text": "NFTs",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuroinflammation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "A\u03b240",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain 27",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain amyloid",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid deposition",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dementias",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "t-tau",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Phosphorylated Tau",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "p-tau",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal injury",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NFT",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive deterioration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tau PET",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Neurofilament Light Chain",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NfL",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "axonal damage",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurodegeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Atrophy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "hippocampal atrophy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Plasma YKL-40",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "YKL-40",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "astrocytosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "microglial",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "TSPO PET",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "translocator protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TSPO",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Plasma A\u03b242/A\u03b240",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Plasma p-tau217",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p-tau181",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-AD dementias",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipids",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood-brain barrier",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "nasal",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "olfactory",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid-beta levels 15",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's vaccines need to be addressed before",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's vaccines",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "APOE4 26,37",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "By modifying genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's, such as APOE4 26,37",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "therapeutic genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ALS",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyotrophic lateral sclerosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "plasma",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "tau tangles",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Stem cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain edema",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "microhemorrhages",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "bleeding",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "sigma-1 receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "dizziness",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "fatigue",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "metformin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "pioglitazone",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "sildenafil",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-AD populations",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD patients",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "synaptic",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD treatmentdisease",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's patients families.",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's pathologyAD) pathology.",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid species anti-amyloid monoclonal antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's treatment plan, considering the benefits and risks of all authorized medications and therapies",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Plasma YKL-40:",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Vaccines",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer's vaccines(AD) vaccines",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "donanemab",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-Alzheimer's disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tau protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Small molecules",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "sigma-1",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ANAVEX 2-73) A sigma-1",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ADzheimer's disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    }
+  ],
+  "hunflair": [
+    {
+      "text": "Alzheimer's disease",
+      "normalized": "alzheimer's disease",
+      "label": "DISEASE",
+      "start": 0,
+      "end": 19,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "AD",
+      "normalized": "ad",
+      "label": "DISEASE",
+      "start": 21,
+      "end": 23,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurodegenerative disorder",
+      "normalized": "neurodegenerative disorder",
+      "label": "DISEASE",
+      "start": 42,
+      "end": 68,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cognitive decline",
+      "normalized": "cognitive decline",
+      "label": "DISEASE",
+      "start": 86,
+      "end": 103,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "memory loss",
+      "normalized": "memory loss",
+      "label": "DISEASE",
+      "start": 105,
+      "end": 116,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "dementia",
+      "normalized": "dementia",
+      "label": "DISEASE",
+      "start": 181,
+      "end": 189,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alzheimer's",
+      "normalized": "alzheimer's",
+      "label": "DISEASE",
+      "start": 411,
+      "end": 422,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "patients",
+      "normalized": "patients",
+      "label": "ORGANISM",
+      "start": 121,
+      "end": 129,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.99,
+      "source": "hunflair"
+    },
+    {
+      "text": "death",
+      "normalized": "death",
+      "label": "DISEASE",
+      "start": 668,
+      "end": 673,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "disability",
+      "normalized": "disability",
+      "label": "DISEASE",
+      "start": 705,
+      "end": 715,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "dementia-related",
+      "normalized": "dementia-related",
+      "label": "DISEASE",
+      "start": 793,
+      "end": 809,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "patient",
+      "normalized": "patient",
+      "label": "ORGANISM",
+      "start": 1323,
+      "end": 1330,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurological diseases",
+      "normalized": "neurological diseases",
+      "label": "DISEASE",
+      "start": 2607,
+      "end": 2628,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "acetylcholine",
+      "normalized": "acetylcholine",
+      "label": "CHEMICAL",
+      "start": 2781,
+      "end": 2794,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "deficit",
+      "normalized": "deficit",
+      "label": "CHEMICAL",
+      "start": 3142,
+      "end": 3149,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.77,
+      "source": "hunflair"
+    },
+    {
+      "text": "cholinesterase inhibitors",
+      "normalized": "cholinesterase inhibitors",
+      "label": "CHEMICAL",
+      "start": 3263,
+      "end": 3288,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Tacrine",
+      "normalized": "tacrine",
+      "label": "CHEMICAL",
+      "start": 3352,
+      "end": 3359,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "donepezil",
+      "normalized": "donepezil",
+      "label": "CHEMICAL",
+      "start": 3506,
+      "end": 3515,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "rivastigmine",
+      "normalized": "rivastigmine",
+      "label": "CHEMICAL",
+      "start": 3527,
+      "end": 3539,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Exelon",
+      "normalized": "exelon",
+      "label": "CHEMICAL",
+      "start": 3541,
+      "end": 3547,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.929,
+      "source": "hunflair"
+    },
+    {
+      "text": "galantamine",
+      "normalized": "galantamine",
+      "label": "CHEMICAL",
+      "start": 3554,
+      "end": 3565,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Razadyne",
+      "normalized": "razadyne",
+      "label": "CHEMICAL",
+      "start": 3567,
+      "end": 3575,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "amyloid-beta",
+      "normalized": "amyloid-beta",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 3895,
+      "end": 3907,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "aducanumab",
+      "normalized": "aducanumab",
+      "label": "CHEMICAL",
+      "start": 4572,
+      "end": 4582,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "lecanemab",
+      "normalized": "lecanemab",
+      "label": "CHEMICAL",
+      "start": 4626,
+      "end": 4635,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "\u03b2-amyloid",
+      "normalized": "\u03b2-amyloid",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4804,
+      "end": 4813,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "A\u03b2",
+      "normalized": "a\u03b2",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4815,
+      "end": 4817,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Donanemab",
+      "normalized": "donanemab",
+      "label": "CHEMICAL",
+      "start": 5131,
+      "end": 5140,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "amyloid-related imaging abnormalities",
+      "normalized": "amyloid-related imaging abnormalities",
+      "label": "DISEASE",
+      "start": 5596,
+      "end": 5633,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cognitive impairment",
+      "normalized": "cognitive impairment",
+      "label": "DISEASE",
+      "start": 5899,
+      "end": 5919,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "MCI",
+      "normalized": "mci",
+      "label": "DISEASE",
+      "start": 5921,
+      "end": 5924,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.977,
+      "source": "hunflair"
+    },
+    {
+      "text": "AD dementia",
+      "normalized": "ad dementia",
+      "label": "DISEASE",
+      "start": 5967,
+      "end": 5978,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BIIB037",
+      "normalized": "biib037",
+      "label": "CHEMICAL",
+      "start": 6107,
+      "end": 6114,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "monoclonal auto-antibody",
+      "normalized": "monoclonal auto-antibody",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6131,
+      "end": 6155,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.965,
+      "source": "hunflair"
+    },
+    {
+      "text": "IgG1-mAb",
+      "normalized": "igg1-mab",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6157,
+      "end": 6165,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.963,
+      "source": "hunflair"
+    },
+    {
+      "text": "A\u03b242",
+      "normalized": "a\u03b242",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6237,
+      "end": 6241,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "beta-amyloid",
+      "normalized": "beta-amyloid",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7391,
+      "end": 7403,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.995,
+      "source": "hunflair"
+    },
+    {
+      "text": "acetylcholinesterase",
+      "normalized": "acetylcholinesterase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9155,
+      "end": 9175,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Memantine",
+      "normalized": "memantine",
+      "label": "CHEMICAL",
+      "start": 9758,
+      "end": 9767,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "NMDA receptor",
+      "normalized": "nmda receptor",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9772,
+      "end": 9785,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "glutamate",
+      "normalized": "glutamate",
+      "label": "CHEMICAL",
+      "start": 9950,
+      "end": 9959,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "tau",
+      "normalized": "tau",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 83,
+      "end": 86,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "APOE4",
+      "normalized": "apoe4",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 807,
+      "end": 812,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "neuroinflammation",
+      "normalized": "neuroinflammation",
+      "label": "DISEASE",
+      "start": 1668,
+      "end": 1685,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.997,
+      "source": "hunflair"
+    },
+    {
+      "text": "ARIA",
+      "normalized": "aria",
+      "label": "DISEASE",
+      "start": 2220,
+      "end": 2224,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ALS",
+      "normalized": "als",
+      "label": "DISEASE",
+      "start": 2265,
+      "end": 2268,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "amyotrophic lateral sclerosis",
+      "normalized": "amyotrophic lateral sclerosis",
+      "label": "DISEASE",
+      "start": 2270,
+      "end": 2299,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "p-tau217",
+      "normalized": "p-tau217",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 2371,
+      "end": 2379,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.994,
+      "source": "hunflair"
+    },
+    {
+      "text": "A\u03b242/40",
+      "normalized": "a\u03b242/40",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 2398,
+      "end": 2405,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.994,
+      "source": "hunflair"
+    },
+    {
+      "text": "mitochondrial dysfunction",
+      "normalized": "mitochondrial dysfunction",
+      "label": "DISEASE",
+      "start": 3053,
+      "end": 3078,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "amyloid-\u03b2",
+      "normalized": "amyloid-\u03b2",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4611,
+      "end": 4620,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "brain edema",
+      "normalized": "brain edema",
+      "label": "DISEASE",
+      "start": 4844,
+      "end": 4855,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ARIA-E",
+      "normalized": "aria-e",
+      "label": "DISEASE",
+      "start": 4920,
+      "end": 4926,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "bleeding",
+      "normalized": "bleeding",
+      "label": "DISEASE",
+      "start": 5318,
+      "end": 5326,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Tau-targeting",
+      "normalized": "tau-targeting",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 512,
+      "end": 525,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "semorinemab",
+      "normalized": "semorinemab",
+      "label": "CHEMICAL",
+      "start": 545,
+      "end": 556,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "gosuranemab",
+      "normalized": "gosuranemab",
+      "label": "CHEMICAL",
+      "start": 561,
+      "end": 572,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "sigma-1 receptor",
+      "normalized": "sigma-1 receptor",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 1031,
+      "end": 1047,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "blarcamesine",
+      "normalized": "blarcamesine",
+      "label": "CHEMICAL",
+      "start": 1111,
+      "end": 1123,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "dizziness",
+      "normalized": "dizziness",
+      "label": "DISEASE",
+      "start": 1193,
+      "end": 1202,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "fatigue",
+      "normalized": "fatigue",
+      "label": "DISEASE",
+      "start": 1207,
+      "end": 1214,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "metformin",
+      "normalized": "metformin",
+      "label": "CHEMICAL",
+      "start": 1261,
+      "end": 1270,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "pioglitazone",
+      "normalized": "pioglitazone",
+      "label": "CHEMICAL",
+      "start": 1272,
+      "end": 1284,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "sildenafil",
+      "normalized": "sildenafil",
+      "label": "CHEMICAL",
+      "start": 1290,
+      "end": 1300,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "antisense oligonucleotides",
+      "normalized": "antisense oligonucleotides",
+      "label": "CHEMICAL",
+      "start": 1725,
+      "end": 1751,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ASOs",
+      "normalized": "asos",
+      "label": "CHEMICAL",
+      "start": 1753,
+      "end": 1757,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.846,
+      "source": "hunflair"
+    },
+    {
+      "text": "tofersen",
+      "normalized": "tofersen",
+      "label": "CHEMICAL",
+      "start": 1764,
+      "end": 1772,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "patient-centered",
+      "normalized": "patient-centered",
+      "label": "ORGANISM",
+      "start": 4006,
+      "end": 4022,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.959,
+      "source": "hunflair"
+    },
+    {
+      "text": "synaptic dysfunction",
+      "normalized": "synaptic dysfunction",
+      "label": "DISEASE",
+      "start": 4360,
+      "end": 4380,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.983,
+      "source": "hunflair"
+    },
+    {
+      "text": "mitochondrial impairment",
+      "normalized": "mitochondrial impairment",
+      "label": "DISEASE",
+      "start": 4386,
+      "end": 4410,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.995,
+      "source": "hunflair"
+    },
+    {
+      "text": "ADzheimer's disease",
+      "normalized": "adzheimer's disease",
+      "label": "DISEASE",
+      "start": 5470,
+      "end": 5489,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "deficit in acetylcholine",
+      "normalized": "deficit in acetylcholine",
+      "label": "DISEASE",
+      "start": 7102,
+      "end": 7126,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.852,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alzheimer's pathologyAD",
+      "normalized": "alzheimer's pathologyad",
+      "label": "DISEASE",
+      "start": 7971,
+      "end": 7994,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    }
+  ],
+  "scispacy_count": 173,
+  "hunflair_count": 73,
+  "hunflair_new_count": 26
+}

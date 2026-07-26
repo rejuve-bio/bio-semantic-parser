@@ -1,0 +1,182 @@
+{
+  "pmc_id": "PMC12659517",
+  "input_file": "data/ner_comparison/PMC12659517_20260726_204348.json",
+  "timestamp": "20260726_204348",
+  "chunks_processed": 3,
+  "evaluation_method": "ensemble_consensus_2plus",
+  "overall_metrics": {
+    "total_unique_entities": 1112,
+    "consensus_count": 35,
+    "scispacy": {
+      "total_count": 1098,
+      "exclusive_count": 1063,
+      "avg_span_len": 15.1,
+      "overlap_ratio": 0.032
+    },
+    "hunflair": {
+      "total_count": 49,
+      "exclusive_count": 14,
+      "avg_span_len": 11.3,
+      "overlap_ratio": 0.714
+    },
+    "exclusive_gains": {
+      "scispacy_only": [
+        "24-month-old mice",
+        "3-ii",
+        "4e-bp1",
+        "4ebp1",
+        "4ebp1 (fig. 3",
+        "5 \u00d7 fad",
+        "5-month-old",
+        "53bp1",
+        "[112\u2013114]",
+        "[11].",
+        "[120\u2013122]",
+        "[121].",
+        "[136, 137]",
+        "[14].",
+        "[155\u2013157]",
+        "[157]",
+        "[161].",
+        "[191]",
+        "[196]",
+        "[1]"
+      ],
+      "hunflair_only": [
+        "cd11b",
+        "cd38",
+        "cd4",
+        "cd8",
+        "chemokine",
+        "chronic inflammation",
+        "cxcr3hi",
+        "cytokine",
+        "immune dysregulation",
+        "ms",
+        "neurodegenerative conditions",
+        "neurodegenerative pathologies",
+        "stimulator of interferon",
+        "t-bet"
+      ]
+    },
+    "comparison_lenses": {
+      "net_entity_yield": {
+        "scispacy_gain": 1063,
+        "hunflair_gain": 14,
+        "total_unique_entities": 1112,
+        "formula": {
+          "scispacy": "Entities_scispacy \\ Entities_hunflair",
+          "hunflair": "Entities_hunflair \\ Entities_scispacy"
+        }
+      },
+      "category_specific_coverage_shift": {
+        "scispacy_total": 1098,
+        "hunflair_total": 49,
+        "consensus_count": 35,
+        "exclusive_gains": {
+          "scispacy_only": [
+            "24-month-old mice",
+            "3-ii",
+            "4e-bp1",
+            "4ebp1",
+            "4ebp1 (fig. 3",
+            "5 \u00d7 fad",
+            "5-month-old",
+            "53bp1",
+            "[112\u2013114]",
+            "[11].",
+            "[120\u2013122]",
+            "[121].",
+            "[136, 137]",
+            "[14].",
+            "[155\u2013157]",
+            "[157]",
+            "[161].",
+            "[191]",
+            "[196]",
+            "[1]"
+          ],
+          "hunflair_only": [
+            "cd11b",
+            "cd38",
+            "cd4",
+            "cd8",
+            "chemokine",
+            "chronic inflammation",
+            "cxcr3hi",
+            "cytokine",
+            "immune dysregulation",
+            "ms",
+            "neurodegenerative conditions",
+            "neurodegenerative pathologies",
+            "stimulator of interferon",
+            "t-bet"
+          ]
+        }
+      },
+      "high_confidence_consensus_precision_proxy": {
+        "true_positive_proxy": 35,
+        "scispacy_precision_proxy": 0.032,
+        "hunflair_precision_proxy": 0.714,
+        "note": "Uses the model intersection as a strict proxy for true positives; no confidence score is available in the current input files."
+      },
+      "span_precision_and_boundary_quality": {
+        "scispacy_avg_span_len": 15.1,
+        "hunflair_avg_span_len": 11.3
+      }
+    }
+  },
+  "per_label_metrics": {
+    "DISEASE": {
+      "consensus_count": 19,
+      "models": {
+        "scispacy": {
+          "precision": 0.12,
+          "recall": 1.0,
+          "f1": 0.215,
+          "count": 158
+        },
+        "hunflair": {
+          "precision": 0.76,
+          "recall": 1.0,
+          "f1": 0.864,
+          "count": 25
+        }
+      }
+    },
+    "GENE_OR_GENE_PRODUCT": {
+      "consensus_count": 3,
+      "models": {
+        "scispacy": {
+          "precision": 0.026,
+          "recall": 1.0,
+          "f1": 0.05,
+          "count": 117
+        },
+        "hunflair": {
+          "precision": 0.158,
+          "recall": 1.0,
+          "f1": 0.273,
+          "count": 19
+        }
+      }
+    },
+    "ORGANISM": {
+      "consensus_count": 5,
+      "models": {
+        "scispacy": {
+          "precision": 0.116,
+          "recall": 1.0,
+          "f1": 0.208,
+          "count": 43
+        },
+        "hunflair": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "count": 5
+        }
+      }
+    }
+  }
+}

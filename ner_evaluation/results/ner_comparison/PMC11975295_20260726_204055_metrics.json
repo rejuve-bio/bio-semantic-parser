@@ -1,0 +1,211 @@
+{
+  "pmc_id": "PMC11975295",
+  "input_file": "data/ner_comparison/PMC11975295_20260726_204055.json",
+  "timestamp": "20260726_204055",
+  "chunks_processed": 4,
+  "evaluation_method": "ensemble_consensus_2plus",
+  "overall_metrics": {
+    "total_unique_entities": 199,
+    "consensus_count": 47,
+    "scispacy": {
+      "total_count": 173,
+      "exclusive_count": 126,
+      "avg_span_len": 13.9,
+      "overlap_ratio": 0.272
+    },
+    "hunflair": {
+      "total_count": 73,
+      "exclusive_count": 26,
+      "avg_span_len": 12.3,
+      "overlap_ratio": 0.644
+    },
+    "exclusive_gains": {
+      "scispacy_only": [
+        "ad patients",
+        "ad treatmentdisease",
+        "ad) symptoms",
+        "alois alzheimer",
+        "alzheimer's is the shift",
+        "alzheimer's pathologyad) pathology.",
+        "alzheimer's patients families.",
+        "alzheimer's treatment plan, considering the benefits and risks of all authorized medications and therapies",
+        "alzheimer's vaccines",
+        "alzheimer's vaccines need to be addressed before",
+        "alzheimer's vaccines(ad) vaccines",
+        "alzheimer's, focusing on disease-modifying therapies",
+        "alzheimer's, such as apoe4 26,37",
+        "amino acids 3\u20137 of",
+        "amyloid",
+        "amyloid cascade",
+        "amyloid deposition",
+        "amyloid pet",
+        "amyloid pet or cerebrospinal fluid",
+        "amyloid plaques"
+      ],
+      "hunflair_only": [
+        "acetylcholinesterase",
+        "alzheimer's",
+        "alzheimer's pathologyad",
+        "amyloid-\u03b2",
+        "antisense oligonucleotides",
+        "apoe4",
+        "aria-e",
+        "asos",
+        "a\u03b2",
+        "a\u03b242/40",
+        "blarcamesine",
+        "cholinesterase inhibitors",
+        "deficit",
+        "deficit in acetylcholine",
+        "dementia-related",
+        "gosuranemab",
+        "igg1-mab",
+        "lecanemab",
+        "neurological diseases",
+        "p-tau217"
+      ]
+    },
+    "comparison_lenses": {
+      "net_entity_yield": {
+        "scispacy_gain": 126,
+        "hunflair_gain": 26,
+        "total_unique_entities": 199,
+        "formula": {
+          "scispacy": "Entities_scispacy \\ Entities_hunflair",
+          "hunflair": "Entities_hunflair \\ Entities_scispacy"
+        }
+      },
+      "category_specific_coverage_shift": {
+        "scispacy_total": 173,
+        "hunflair_total": 73,
+        "consensus_count": 47,
+        "exclusive_gains": {
+          "scispacy_only": [
+            "ad patients",
+            "ad treatmentdisease",
+            "ad) symptoms",
+            "alois alzheimer",
+            "alzheimer's is the shift",
+            "alzheimer's pathologyad) pathology.",
+            "alzheimer's patients families.",
+            "alzheimer's treatment plan, considering the benefits and risks of all authorized medications and therapies",
+            "alzheimer's vaccines",
+            "alzheimer's vaccines need to be addressed before",
+            "alzheimer's vaccines(ad) vaccines",
+            "alzheimer's, focusing on disease-modifying therapies",
+            "alzheimer's, such as apoe4 26,37",
+            "amino acids 3\u20137 of",
+            "amyloid",
+            "amyloid cascade",
+            "amyloid deposition",
+            "amyloid pet",
+            "amyloid pet or cerebrospinal fluid",
+            "amyloid plaques"
+          ],
+          "hunflair_only": [
+            "acetylcholinesterase",
+            "alzheimer's",
+            "alzheimer's pathologyad",
+            "amyloid-\u03b2",
+            "antisense oligonucleotides",
+            "apoe4",
+            "aria-e",
+            "asos",
+            "a\u03b2",
+            "a\u03b242/40",
+            "blarcamesine",
+            "cholinesterase inhibitors",
+            "deficit",
+            "deficit in acetylcholine",
+            "dementia-related",
+            "gosuranemab",
+            "igg1-mab",
+            "lecanemab",
+            "neurological diseases",
+            "p-tau217"
+          ]
+        }
+      },
+      "high_confidence_consensus_precision_proxy": {
+        "true_positive_proxy": 47,
+        "scispacy_precision_proxy": 0.272,
+        "hunflair_precision_proxy": 0.644,
+        "note": "Uses the model intersection as a strict proxy for true positives; no confidence score is available in the current input files."
+      },
+      "span_precision_and_boundary_quality": {
+        "scispacy_avg_span_len": 13.9,
+        "hunflair_avg_span_len": 12.3
+      }
+    }
+  },
+  "per_label_metrics": {
+    "CHEMICAL": {
+      "consensus_count": 12,
+      "models": {
+        "scispacy": {
+          "precision": 0.429,
+          "recall": 1.0,
+          "f1": 0.6,
+          "count": 28
+        },
+        "hunflair": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "count": 24
+        }
+      }
+    },
+    "DISEASE": {
+      "consensus_count": 22,
+      "models": {
+        "scispacy": {
+          "precision": 0.423,
+          "recall": 1.0,
+          "f1": 0.595,
+          "count": 52
+        },
+        "hunflair": {
+          "precision": 0.733,
+          "recall": 1.0,
+          "f1": 0.846,
+          "count": 30
+        }
+      }
+    },
+    "GENE_OR_GENE_PRODUCT": {
+      "consensus_count": 2,
+      "models": {
+        "scispacy": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.333,
+          "count": 10
+        },
+        "hunflair": {
+          "precision": 0.125,
+          "recall": 1.0,
+          "f1": 0.222,
+          "count": 16
+        }
+      }
+    },
+    "ORGANISM": {
+      "consensus_count": 2,
+      "models": {
+        "scispacy": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "count": 8
+        },
+        "hunflair": {
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8,
+          "count": 3
+        }
+      }
+    }
+  }
+}

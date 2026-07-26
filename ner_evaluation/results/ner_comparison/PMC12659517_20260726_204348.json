@@ -1,0 +1,6044 @@
+{
+  "pmc_id": "PMC12659517",
+  "timestamp": "20260726_204348",
+  "chunks": 3,
+  "fetcher_version": "production",
+  "coref_resolution": true,
+  "coref_url": "http://202.181.159.222:8081",
+  "scispacy": [
+    {
+      "text": "organ",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "infections",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cancers",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "autoimmune diseases",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurodegenerative diseases",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alzheimer\u2019s disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Parkinson\u2019s disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "telomere",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "stem cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "nutrient-sensing",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cellular",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurodegenerative disorders",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "disease",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurodegeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NDDs",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "[1]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic stem cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HSCs",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune progenitors",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "bone marrow (BM)",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "thymus",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mature immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphoid organs",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissues",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "infection",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[7",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD [8, 9],",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "multiple sclerosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NDD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[14].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dysregulation of myeloid trafficking",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuropathology",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "central nervous system",
+      "label": "ANATOMICAL_SYSTEM",
+      "source": "scispacy"
+    },
+    {
+      "text": "CNS",
+      "label": "ANATOMICAL_SYSTEM",
+      "source": "scispacy"
+    },
+    {
+      "text": "self-renewal",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "HSC",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neutrophils/monocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid-biased HSCs",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphoid-myeloid balanced HSCs",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "bal-HSCs",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BM",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent CD8+CD28\u2212 T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "B cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BM [19",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BM neutrophils",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neutrophil dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "natural killer (NK) cell pool",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NK cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inhibitory receptors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[21]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BM hematopoietic landscape",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "na\u00efve immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphoid nodes",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "spleen",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "organs",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cGAS: cyclic GMP-AMP synthase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "STING",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "interferon genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-associated \u03b2-galactosidase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "clonal",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CHIP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-associated B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NK cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "natural killer cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "LNs",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymph nodes",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "fibroblastic reticular cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "FDC",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "follicular dendritic cell",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tfh cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "T follicular helper cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid-biased hematopoietic stem cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "epithelial-to-mesenchymal",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCR",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "B cell receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TCR",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "fetal",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "atrophy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "thymic",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD38+ na\u00efve T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CXCR3hi na\u00efve T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "na\u00efve T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[24].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "activated na\u00efve T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fig. 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Spleens",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "rats",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "granulocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphoid follicles",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "periarterial sheaths",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "splenic B/memory B cells [27",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD4+ T cell receptor",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cytokine/chemokine",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "T/B cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD4+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "plasmacytoid dendritic cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "skin-draining LNs",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mice",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissue-draining LNs",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Stromal deterioration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "LN atrophy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fibroblastic reticular cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "reticular network",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "LN na\u00efve T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dendritic cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "impairment of follicular dendritic cells",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "high-affinity antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "stromal cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "erosion",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral blood",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell populations",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "memory-like T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "humans",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell populations [37",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "ABCs",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "memory B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "transcription factor T-bet",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "integrins CD11b",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD11c",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "pro-B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "common lymphoid progenitors",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neutrophil",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD28 loss",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[34]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD8+ T effector memory (TEM) cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16INK4A",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "TEM cells",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent fibroblasts",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "SASP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cytokines",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "chemokines",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracellular matrix proteases [",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "meninges host immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IgA-secreting plasma cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "meninges",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "calvaria",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "antigen-experienced B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dural venous sinuses",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dural sinuses",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "cerebrospinal fluid",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "dural meninges",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "meningeal lymphatic",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "misfolded proteins",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Border-associated macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BAMs",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "meningeal compartments",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "dura mater",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Microglial",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human brain",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "HuMi_Aged gene",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "human brain [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "glial",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid cells 2",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "TREM2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuroinflammation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[9]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "white matter cluster",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "nodules",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelin [57",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain parenchyma",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "brains",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "CNS antigens [58",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Astrocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "astrocyte",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "hippocampus",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "autophagosomes",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "cyclic GMP-AMP synthase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "DNA",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "receptor-interacting protein kinase 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "RIPK1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "transforming growth factor-\u03b2-activated kinase 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "monocyte",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphocyte",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "monocyte-to-lymphocyte",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[63]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipid transport genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "monocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CSF",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CSF Microglial",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "L\u00f3pez-Ot\u00edn",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "nutrient-sensing (Fig. 3",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fig. 4",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fig. 6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mtDNA",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondria DNA",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "nDNA",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclear",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "NHEJ",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-homologous DNA end",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "TERT",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "telomerase reverse",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "nucleotide",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "MMR",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "ATM",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ataxia telangiectasia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NET",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "neutrophil extracellular",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-associated secretory",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CDKN2A",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Cyclin Dependent Kinase Inhibitor 2A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "53BP1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "p53-binding protein 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "natural killer",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NLRP3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ub",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "ubiquitin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "LC3-II",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "microtubule-associated protein 1 light chain",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "3-II",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "eIF5A",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "eukaryotic initiation factor 5A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TFEB",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "transcription factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "EB",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BAG3",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Bcl2-associated athanogene 3",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "LAMP-2A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "lysosomal associated membrane protein-2A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mTOR",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "rapamycin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "TSC",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "tuberous sclerosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IGF",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "insulin-like growth factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IRS1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "insulin receptor substrate 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PI3K",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "phosphoinositide 3-kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PDK",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "phosphoinositide-dependent kinase 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AKT1: protein kinase B",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ULK1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "UNC-51-like kinase 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "FAs",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "fatty acids",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "4E-BP1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "eukaryotic translation initiation factor 4E-binding protein 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "FKBP38",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "FK506-binding protein38",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mTORC1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "eIF4E",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "eukaryotic translation initiation factor 4E",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "S6K1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "ribosomal protein S6 kinase beta 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NF-kB",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PKC: protein kinase C",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "LKB1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "liver kinase B1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMPK: AMP-activated protein kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NOD-, LRR- and",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "pyrin domain-3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BAK",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCL2 antagonist/killer",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BAX",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Bcl-2 associated X-protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NAD+",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "nicotinamide adenine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "p38 MAPK",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitogen-activated protein kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "GMP-AMP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "RIG-I-MAVS",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "retinoic acid-inducible gene I-mitochondrial",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "RPS6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ribosomal protein S6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CBP80",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Cap binding protein 80",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "eEF2K",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "eukaryotic elongation factor 2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell surface",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "lysosomal",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-apoptotic",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CMA",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "chaperone-mediated",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "PPIA",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "peptidyl-prolyl isomerase A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "UPS",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "TSC1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "cyclin dependent kinase inhibitor",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Phf6",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "MCM",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mini-chromosome",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "XLF",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "XRCC4-like factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "bone marrow",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HMGB1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mobility group box 1",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCL2",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "B-cell lymphoma-2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TP53BP1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "tumor protein P53-binding protein 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "KLRG1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "killer cell lectin-like receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "low-grade",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "cGAS-STING",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "killer cell lectin-like receptor G1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic stem cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclear Factor kappa B",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NOD-",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "LRR-",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "pyrin domain-containing protein 3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TEC",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "thymic epithelial cellsFig",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PD-1",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "death-1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "PD-L1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "death",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "TIGIT: T-cell immunoreceptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "immunoglobulin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "immunoreceptor tyrosine-based inhibitory motif domain;",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "NKG2D: natural killer (NK) group 2 member D",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "uAPR",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "urokinase-type plasminogen activator receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic stem cell Genomic",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "eukaryotic elongation factor 2 kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "thymic epithelial cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic stem cell DNA",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "DSBs",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "laminopathies",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Hutchinson-Gilford progeria syndrome",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "LMNA",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lamina defects",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "premature aging phenotypes [70].",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lamin B1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Drosophila fat bodies [4].",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "genome",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-homologous end joining",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "impairment of non-homologous end joining-mediated",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "DSB",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "deficiency of Ercc1",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "DNA excision repair protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Peripheral lymphocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "5-month-old",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "p21CIP1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ercc1 deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "microglia [",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "DSB nuclease",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell senescence",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "MRE11 complex component",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Nbs1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "patients",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent CD57+CD28\u2212 T cells",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "macrophage-specific NBS1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD4+ T cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "telomeres",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "B and T cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "telomerase-deficient",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "KML001",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell senescence [83, 84].",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human T and B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral blood cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "differentiation-promoting transcription factor-binding sites",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "HSC maintenance genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "polycomb group protein Ezh1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "H3K27 [88]",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ezh1",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "chromatin regulator plant homeodomain 6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "murine HSCs",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "deacetylase SIRT1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic stem and progenitor cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD8+CD28\u2212 T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "SIRT1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IRF3/IRF7",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "DNA-binding domain",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "histone",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD8+ TEM cell subpopulations",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-promoting transcription factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "MAPK",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell-mediated antiviral",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "human immune",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "murine",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "miR-181a",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cells",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ubiquitin\u2013proteasome system",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "misfolded protein monomers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid-biased",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lysosomal protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "murine HSCs (Fig. 3",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "spermidine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fig. 3",
+      "label": "RNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "transcription factor EB",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "lysosome-associated membrane protein type 2A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "proteasome",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell senescence [101].",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-associated",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-related cytokine",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD4+PD-1+CD44High T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "B cell senescence",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-associated microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CDKN1A/p21CIP1",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "SASP [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracellular",
+      "label": "IMMATERIAL_ANATOMICAL_ENTITY",
+      "source": "scispacy"
+    },
+    {
+      "text": "insulin/insulin growth factors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IGFs",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "intracellular",
+      "label": "IMMATERIAL_ANATOMICAL_ENTITY",
+      "source": "scispacy"
+    },
+    {
+      "text": "phosphoinositide 3-kinase (PI3K)\u2013protein kinase B",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PKB",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "serine/threonine kinase AKT)\u2013mTOR",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "receptor tyrosine kinases",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell surface [",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "glucose",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "amino acids, and",
+      "label": "AMINO_ACID",
+      "source": "scispacy"
+    },
+    {
+      "text": "hypoxia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipid",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "phosphorylating key effectors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AKT",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "S6K",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "4EBP1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "growth factor-1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IGF1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mTOR complex-1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "GH receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "insulin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "DAF-16/FOXO",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "heat-shock transcription factor 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "HSF1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "C. elegans [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "STAT3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "leukocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PIK3CD",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent effector T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "EBV-infected B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "MK2 kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "4EBP1 (Fig. 3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "p19ARF",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "RagC",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mTORC1 complex",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "HSC self-renewal",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "mTOR\u2013S6K1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "autophagic",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMP-activated protein kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMPK",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMPK-TAB1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "p38",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "human T cell senescence",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "telomerase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMPK-TAB1-dependent p38",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid progenitors",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "B-lymphoid progenitors [119",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Mitochondrial impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial DNA (",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "premature hematopoietic aging [122].",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mtDNA DSB",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "BAX proteins",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial outer membrane",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "cytosol [",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "acid-inducible gene I (RIG-I)\u2013mitochondrial antiviral signaling (MAVS)-dependent immune response [125]",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial transcription factor A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TFAM",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "metabolic dysregulation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive decline",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "prostaglandin E2",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "PGE2",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD28",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-redox NAD+-dependent enzymes",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-related diseases",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "macrophage",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial NAD+-dependent",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "microglia [132",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "arrest",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cancer",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissue dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Senescent non-immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "tumor cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent cancer cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracellular vesicles",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[136, 137]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell senescence and functional decline",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PD-L1/PD-1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-lymphoid organs [1",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive deterioration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurons",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune cell-specific",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD57",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NKG2D",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD153 [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[155\u2013157]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[120\u2013122]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[157]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "chromosomal",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Chronic inflammation-induced cytokines",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Id1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[161].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "chronic infection",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammaging",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammatory mediators",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "thymic atrophy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ASC",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammasome",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "T cell progenitors",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondria",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "cGAS",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Toll-like receptors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NOD-like receptors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "aryl hydrocarbon receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ADAR1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "adenosine deaminase acting",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b23 adrenoreceptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "intercellular molecular mediators",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "pro-aging mediators",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "plasma",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "memory CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b22-Microglobulin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "circulating Ly6CHigh monocytes",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "TIGIT",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "T-cell immunoreceptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "immunoreceptor tyrosine-based inhibitory motif domain)",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "co-inhibitory receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-associated inhibitory receptor KLRG1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "GD3",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "gut",
+      "label": "ORGANISM_SUBDIVISION",
+      "source": "scispacy"
+    },
+    {
+      "text": "pro-inflammatory cytokines",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-8",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphoid",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "FOXO",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive impairments",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Toll-like receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid differentiation factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[43].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "neutrophils",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "DAM",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "intestinal health",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "central immune cells",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-associated neurodegeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16High cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human brain (Fig. 7",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16High microglia subpopulations",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "microglial subsets",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Li",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "24-month-old mice",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-dependent genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelination reduction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "actin dynamics [200",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "white matter degeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive and motor function",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurovascular",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ALS",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal loss",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "behavioral and cognitive deficits",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ROS",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "reactive oxygen species",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CXCR5",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "C-X-C motif chemokine receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ALS/FTD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyotrophic lateral sclerosis/frontotemporal dementia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PBMC",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral blood mononuclear cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "effector memory T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "TEMRA",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "effector memory cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD45RA",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b2-amyloid",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "DAT",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "dopamine transporter",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "dopamine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "aging-associated gene signature",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "osteopontin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "chitotriosidase 1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[203, 204].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "intracellular lipid droplets",
+      "label": "IMMATERIAL_ANATOMICAL_ENTITY",
+      "source": "scispacy"
+    },
+    {
+      "text": "humans (Fig. 7",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipid-droplet-accumulating microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fig. 7",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipofuscin-like lysosomal inclusions",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD36",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD22",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "scavenger receptor CD36",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mouse and",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[206]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "vitamin B3",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "canonical B cell receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "sialic acid",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b1-synuclein fibrils",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent astrocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mouse",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "lysosomal dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "synaptogenic molecules",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "astrocytic synapse",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "synaptic plasticity [60",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lipopolysaccharide",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-10R",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cholesterol",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "hippocampal astrocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "rheumatoid arthritis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelination impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive and motor decline",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural stem cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "oligodendrocyte",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "IFN-\u03b3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[6",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CXCL13",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CXCR5+CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "caspase-3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelination dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CNS immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-related declines",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CNS immune",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "CNS-resident immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Progranulin",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PGRN",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "GRN deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human induced pluripotent stem cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "endosome",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "GRN",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[215]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ATP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "P2X7R",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PINK1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PTEN-induced kinase 1)-mediated mitophagy [216",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "RICTOR",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mTORC2 complex",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Aged microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Activator protein-1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AP-1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "heterodimeric transcription factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Jun, Fos, Maf and activating transcription factors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "glia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "glia cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune cell types [223, 224]",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-related disorders",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "sections",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "autoimmune encephalomyelitis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "EAE",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "disability",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[11].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cytotoxic CD4+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood [12",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune checkpoint molecules",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "LAG3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CTLA-4",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "costimulatory molecule CD226",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "premature aging",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IgD-CD27\u2212",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD21\u2212CD11c+ B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "aged B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[227].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipid-specific oligoclonal IgM bands",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[228]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "activin A",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "spinal cord",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[196]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cord demyelination",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "EAE [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "demyelinated lesions",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelin damage",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammatory factors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "myelin impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dasatinib",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "quercetin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "INK-ATTAC",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "demyelination",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD patients",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood leukocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD8+ TEM cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-7 receptor alpha",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-7R\u03b1low CD8+ TEM cells",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-7R\u03b1low aging genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "Montreal Cognitive Assessment [235",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD45RA (TEMRA)",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD (Fig. 7",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "tauopathies",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[237\u2013239]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tau",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "H3K9me3 histone",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[237]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "human microglial cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p21",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "SA-\u03b2-gal [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16INK4A-expressing",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid plaques",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "FAD",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fancy",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "premature microglial senescence",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD patients [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent microglia [243",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "phospho-H2AX",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ferroptosis-related genes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "iron-mediated lipid dysmetabolism",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Down syndrome",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD dementia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "type I IFN",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "SA-\u03b2-gal",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "DAM [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Wei",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "H3K18",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "pan-histone lysine",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD neurodegeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "excitotoxicity",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cortical neurons",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD [247]",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tau oligomers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "adjacent cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "tauopathy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "H2O2",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-1\u03b2",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[249].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "YAP",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Yes-associated protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD-associated",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "BV2 microglia",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[241].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "PS19 mouse",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16INK4A-positive senescent astrocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "hyperphosphorylation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCL2 family",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ABT-737",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "5 \u00d7 FAD",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD-like",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "APP/PS1 mice",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal degeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "behavioral deficits",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "young WT splenocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "growth differentiation factor 11",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "APP/PS1",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "[252\u2013254]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral total T and",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "na\u00efve CD4+ and CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "autonomic dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "psychiatric",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "na\u00efve B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "plasma cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "striatal dopamine transporter",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "dopaminergic",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "late-differentiated senescent CD4+ and CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood neutrophil",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "motor impairment",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "caudate",
+      "label": "ANATOMICAL_SYSTEM",
+      "source": "scispacy"
+    },
+    {
+      "text": "putamen [261]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "eye",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "sleep behavior disorder",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD3+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "atypical CD8+ T cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD8+ T cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral immune",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "microglia/monocytes",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "human \u03b1-synuclein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "fibrils",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "PFFs",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b1-synuclein aggregates",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[265]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracellular vesicle-associated \u03b1-synuclein oligomers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracellular \u03b1-synuclein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b1-synuclein-A53T",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "substantia nigra pars compacta",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence-related protein markers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[266]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CD4+ and CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mouse brains [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "N2a cells",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclear lamina",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "pesticide rotenone",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "paraquat",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[270, 271].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "midbrain neurons",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "hiPSCs",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "SNCA gene duplication",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "cGAS/STING",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[272",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "FTD",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "late memory T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "SOD1G93A rats",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Iba1+ microglia",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16INK4A, p53, and matrix metalloproteinase-1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "frontal cortex",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "hexanucleotide repeat",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "noncoding region",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "C9orf72 gene",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "C9orf72",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "C9orf72 deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "macular",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "vision loss",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NAD\u207a",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "subretinal",
+      "label": "IMMATERIAL_ANATOMICAL_ENTITY",
+      "source": "scispacy"
+    },
+    {
+      "text": "healthy macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[278].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "stem",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissue",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "retinal degeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Langerhans cell histiocytosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammatory disorder",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic progenitors",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent myeloid cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent CD11a+ macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Langerhans cell histiocytosis subsequently develop progressive and incurable neurodegeneration [280].",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral inflammation",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[280].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "circulating monocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "splenic macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "A\u03b2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[281, 282]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b1-synuclein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyotrophic lateral sclerosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "dementia",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[280]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Immune",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "therapyTheoretical",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u2713\u2713mTOR inhibitor RTB101",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ANZCTR",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[320]mTOR inhibitor BEZ235",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "RAD001",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "available)[319]mTOR",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "testedRepairing DNA damage",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Bacillus Calmette",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Gu\u00e9rin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT04685590",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u2713\u2713Anti-PD-L1 antibody",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "tiral",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT05068830",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "TNF-\u03b1",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Etanercept",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u2713\u2713mTOR",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ongoing12-week",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ongoingTime",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT06681948",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "aMCI",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT06444568",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT04820478",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NAD",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "MCI",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CBS",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "MSA",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT06162013",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Activator MIB-626",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Resveratrol",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT01504854",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fecal",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ChiCTR 2200064504)",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT04837313",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "ongoingFecal",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT06388863",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Metformin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT05367947",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NTR1616",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NTR4743",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT06324422",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT05720468",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "NCT05948930",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lateral sclerosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCG Bacillus Calmette",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Corticobasal syndrome",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "DQ Dasatinib +",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "PSP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "palsy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NAD Nicotinamide adenine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "SCD Subjective cognitive decline",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD (NCT04063124)[294] DQ",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Anti-PD-L1 antibody",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD (NCT05551741)[305",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "ChiCTR 2200064504) [381] Fecal",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCG vaccine",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "MCM DNA helicase [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Id1 [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "adrenoreceptor \u03b23 signaling [179, 180]",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "IGF1 [181",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "PIEZO1 [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "adiponectin receptor signaling [168]",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "APP/PS1 mice [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16INK4A-positive senescent cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AP20187",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BubR1 progeroid mouse model [286]",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ABT263",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-apoptotic proteins BCL-2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCL-xL",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "uPAR",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescence cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "uPAR-targeting chimeric antigen receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CAR",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "chimeric peptide 'matchmaker'",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CAR T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "GPNMB",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "GPNMB-positive senescent cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "progeroid",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "p16INK4A siRNA",
+      "label": "RNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "plaques",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "memory deficits",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD mice [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "ABT-263",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain barrier",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral senescent cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "DQ",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "early-stage",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-B2MG",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-DCR2 antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune checkpoint molecule",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cytotoxic CD8+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PD-L1 [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Canagliflozin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "sodium glucose co-transporter 2 inhibitor",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[297].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "APP/PS1 mice [298",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Trem2\u2212/\u2212 5 \u00d7 FAD",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "immunomodulatory monocyte-derived macrophages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cognitive deficits",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cerebral",
+      "label": "ORGANISM_SUBDIVISION",
+      "source": "scispacy"
+    },
+    {
+      "text": "first-in-human",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-PD-L1 antibody IBC-Ab002",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "SNCA-A53T",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Platelet-derived chemokine platelet factor 4",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PF4",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "platelets",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-associated functional declines",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Wyss-Coray",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "diabetic vascular aging and damage",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "TFAM deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood cytokines",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TFAM-deficient T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "na\u00efve T and B cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-related inflammatory markers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "myeloid PGE\u2082/EP2R",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "peripheral myeloid PGE2/EP2R",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-11",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "pro-inflammatory cytokine",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-6 family",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "age-related immune-metabolic dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mice [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "premature senescence",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ataxia-Telangiectasia",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain organoids",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "mice [314",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "[315, 316]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "MPTP mouse",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[272, 317].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Microglial cGAS deletion",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "MPTP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[112\u2013114]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[318]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cardiovascular dysfunction",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent CD4+PD-1+ and CD8+PD-1+ T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "RTB101",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BEZ235",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "IFN-induced antiviral",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[320",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD [322],",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[323",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "wound",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "p-tau217",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "hippocampal",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cortical",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "caloric",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CR",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "SIRT3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-inflammatory",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "adipose tissues",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "C.",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "granzyme B-secreting T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "senescent markers",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "transcription factors NR4A1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "TOX [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "fasting enhances stress resistance",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "IGF-1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PKA",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "bone",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "muscle mass",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "moderate-protein",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "low-carbohydrate",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "influenza virus infection",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ketogenesis",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "pathogenic monocytes",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[341]",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[342]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "fatigue",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "depression",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurological disability",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "polyamine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "B and T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[346]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[347]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "humans [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "urolithin A",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[121].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lymphoid compartments",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "antiviral immune response in",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "olfactory",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[349",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "parkinsonism",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurobehavioral deficits",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "controlled-release",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitochondrial protonophore",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[352]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "L-carnitine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "reduced neurodegeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[355",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Cdc42",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ezh1 [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "anti-viral",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal injury",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PD models",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[362]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[363]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lamin A",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lamin B1 [4",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lamin C",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "Per2 [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ercc1 [75, 76",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "MRE11A [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Nbs1 [77, 78]",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "SIRT6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ATM [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "DNA-PKcs [",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "telomere vesicles to T cells",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "elongate telomeres",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[368",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Telomerase reverse transcriptase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "amyloid",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "spine",
+      "label": "ORGANISM_SUBDIVISION",
+      "source": "scispacy"
+    },
+    {
+      "text": "improves learning and memory",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "osteoporosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BM aplasia [372",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "germinal center deficiency",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[191]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "donors",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lactobacillus acidophilus DDS-1",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "butyrate",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "inflammatory cytokines",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "IL-1\u03b1",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lactobacillus plantarum GKM3",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "SAMP8 mice [",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "overweight",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[377]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Bifidobacterium longum Bar33",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lactobacillus helveticus Bar13",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "regulatory T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "memory T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[378",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[379",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "gastrointestinal disorders",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "FMT",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "oral diabetes",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood sugar",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMPK-independent",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Nrf2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "multiple immune cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mitofusin 2",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Type 2 diabetes",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuron",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "RAN",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "repeat-associated non-AUG) protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "improves behavior",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "non-human primates [383]",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "orbitofrontal cortex",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "exhausted/senescent T cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "obesity",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PBMCs",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "premature immune senescence [401].",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "AD or MCI",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Chinese medicine (",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "TCM",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Bacille-Calmette-Gu\u00e9rin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "tuberculosis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BCG",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "immune cell populations",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "individuals",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    }
+  ],
+  "hunflair": [
+    {
+      "text": "cancers",
+      "normalized": "cancers",
+      "label": "DISEASE",
+      "start": 167,
+      "end": 174,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "autoimmune diseases",
+      "normalized": "autoimmune diseases",
+      "label": "DISEASE",
+      "start": 176,
+      "end": 195,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurodegenerative disorders",
+      "normalized": "neurodegenerative disorders",
+      "label": "DISEASE",
+      "start": 206,
+      "end": 233,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurodegenerative diseases",
+      "normalized": "neurodegenerative diseases",
+      "label": "DISEASE",
+      "start": 321,
+      "end": 347,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alzheimer\u2019s disease",
+      "normalized": "alzheimer\u2019s disease",
+      "label": "DISEASE",
+      "start": 359,
+      "end": 378,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "AD",
+      "normalized": "ad",
+      "label": "DISEASE",
+      "start": 380,
+      "end": 382,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Parkinson\u2019s disease",
+      "normalized": "parkinson\u2019s disease",
+      "label": "DISEASE",
+      "start": 388,
+      "end": 407,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "PD",
+      "normalized": "pd",
+      "label": "DISEASE",
+      "start": 409,
+      "end": 411,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "mitochondrial dysfunction",
+      "normalized": "mitochondrial dysfunction",
+      "label": "DISEASE",
+      "start": 782,
+      "end": 807,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "chronic inflammation",
+      "normalized": "chronic inflammation",
+      "label": "DISEASE",
+      "start": 830,
+      "end": 850,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurodegenerative pathologies",
+      "normalized": "neurodegenerative pathologies",
+      "label": "DISEASE",
+      "start": 1014,
+      "end": 1043,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "immune dysregulation",
+      "normalized": "immune dysregulation",
+      "label": "DISEASE",
+      "start": 1097,
+      "end": 1117,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurodegenerative conditions",
+      "normalized": "neurodegenerative conditions",
+      "label": "DISEASE",
+      "start": 1238,
+      "end": 1266,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "age-related diseases",
+      "normalized": "age-related diseases",
+      "label": "DISEASE",
+      "start": 1480,
+      "end": 1500,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurodegeneration",
+      "normalized": "neurodegeneration",
+      "label": "DISEASE",
+      "start": 1622,
+      "end": 1639,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "NDDs",
+      "normalized": "ndds",
+      "label": "DISEASE",
+      "start": 63,
+      "end": 67,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "human",
+      "normalized": "human",
+      "label": "ORGANISM",
+      "start": 383,
+      "end": 388,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "inflammation",
+      "normalized": "inflammation",
+      "label": "DISEASE",
+      "start": 1052,
+      "end": 1064,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "infection",
+      "normalized": "infection",
+      "label": "DISEASE",
+      "start": 1077,
+      "end": 1086,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "multiple sclerosis",
+      "normalized": "multiple sclerosis",
+      "label": "DISEASE",
+      "start": 1296,
+      "end": 1314,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "MS",
+      "normalized": "ms",
+      "label": "DISEASE",
+      "start": 1316,
+      "end": 1318,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "NDD",
+      "normalized": "ndd",
+      "label": "DISEASE",
+      "start": 1741,
+      "end": 1744,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CD8",
+      "normalized": "cd8",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 3158,
+      "end": 3161,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CD28",
+      "normalized": "cd28",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 3162,
+      "end": 3166,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neutrophil dysfunction",
+      "normalized": "neutrophil dysfunction",
+      "label": "DISEASE",
+      "start": 3405,
+      "end": 3427,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cGAS",
+      "normalized": "cgas",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4102,
+      "end": 4106,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cyclic GMP-AMP synthase",
+      "normalized": "cyclic gmp-amp synthase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4108,
+      "end": 4131,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "STING",
+      "normalized": "sting",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4133,
+      "end": 4138,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "stimulator of interferon",
+      "normalized": "stimulator of interferon",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4140,
+      "end": 4164,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "T cell receptor",
+      "normalized": "t cell receptor",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 4624,
+      "end": 4639,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BCR",
+      "normalized": "bcr",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5406,
+      "end": 5409,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "B cell receptor",
+      "normalized": "b cell receptor",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5411,
+      "end": 5426,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "TCR",
+      "normalized": "tcr",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5428,
+      "end": 5431,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CD38",
+      "normalized": "cd38",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5757,
+      "end": 5761,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CXCR3hi",
+      "normalized": "cxcr3hi",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5796,
+      "end": 5803,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "rats",
+      "normalized": "rats",
+      "label": "ORGANISM",
+      "start": 6370,
+      "end": 6374,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CD4",
+      "normalized": "cd4",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6673,
+      "end": 6676,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "immune",
+      "normalized": "immune",
+      "label": "DISEASE",
+      "start": 6947,
+      "end": 6953,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.894,
+      "source": "hunflair"
+    },
+    {
+      "text": "cytokine",
+      "normalized": "cytokine",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7066,
+      "end": 7074,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.987,
+      "source": "hunflair"
+    },
+    {
+      "text": "chemokine",
+      "normalized": "chemokine",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7075,
+      "end": 7084,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "atrophy",
+      "normalized": "atrophy",
+      "label": "DISEASE",
+      "start": 7311,
+      "end": 7318,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "mice",
+      "normalized": "mice",
+      "label": "ORGANISM",
+      "start": 7378,
+      "end": 7382,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "LN atrophy",
+      "normalized": "ln atrophy",
+      "label": "DISEASE",
+      "start": 7516,
+      "end": 7526,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.952,
+      "source": "hunflair"
+    },
+    {
+      "text": "humans",
+      "normalized": "humans",
+      "label": "ORGANISM",
+      "start": 8686,
+      "end": 8692,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "T-bet",
+      "normalized": "t-bet",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8963,
+      "end": 8968,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CD11b",
+      "normalized": "cd11b",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8987,
+      "end": 8992,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CD11c",
+      "normalized": "cd11c",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8997,
+      "end": 9002,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "p16INK4A",
+      "normalized": "p16ink4a",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9845,
+      "end": 9853,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "patients",
+      "normalized": "patients",
+      "label": "ORGANISM",
+      "start": 868,
+      "end": 876,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    }
+  ],
+  "scispacy_count": 1098,
+  "hunflair_count": 49,
+  "hunflair_new_count": 14
+}
