@@ -68,12 +68,12 @@ Model-level totals across the 6 papers:
   - Total predicted entities: `2,405`
   - Exclusive entities: `2,083`
   - Average span length: `12.5` to `15.1` tokens depending on paper
-  - Average overlap ratio: `0.215`
+   - Average overlap ratio: `0.222`
 - `hunflair`
   - Total predicted entities: `485`
   - Exclusive entities: `163`
   - Average span length: `9.0` to `15.5` tokens depending on paper
-  - Average overlap ratio: `0.652`
+   - Average overlap ratio: `0.649`
 
 ## Main takeaway
 
@@ -116,8 +116,8 @@ Average F1 across the available papers for each label:
 ### `PMC8160999`
 
 - Strongest `scispacy` result on `ORGANISM` with F1 `0.923`
-- `hunflair` performed best on `CHEMICAL` and `ORGANISM` in this paper
-- This paper shows one of the clearest cases where `hunflair` is more precise for biomedical terms
+- `scispacy` performed best on `CHEMICAL` and `ORGANISM` in this paper
+- `DISEASE` was tied between the two models, so this paper is better described as a strong `scispacy` case than a `hunflair`-leaning one
 
 ### `PMC9500000`
 
