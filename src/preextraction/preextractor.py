@@ -43,16 +43,6 @@ class Preextractor:
                 break
 
         self.negation_detector  = NegationDetector()
-        self.scope_negation_detector = None
-        try:
-            from src.preextraction.scope_negation_detector import (
-                ScopeNegationDetector,
-                should_run as _scope_should_run,
-            )
-            if _scope_should_run():
-                self.scope_negation_detector = ScopeNegationDetector()
-        except Exception:
-            self.scope_negation_detector = None
         self.doi_extractor      = DOIExtractor()
         self.accession_detector = AccessionDetector()
 
