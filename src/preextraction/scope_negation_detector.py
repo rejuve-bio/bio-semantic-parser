@@ -102,7 +102,10 @@ def _load_components():
 
         tokenizer = AutoTokenizer.from_pretrained(_BACKBONE, local_files_only=True)
         model = _MultiHeadTokenClassifier(_BACKBONE)
-        state_dict = torch.load(model_path, map_location="cpu", weights_only=False)
+        try:
+            state_dict = torch.load(model_path, map_location="cpu", weights_only=True)
+        except Exception:
+            state_dict = torch.load(model_path, map_location="cpu", weights_only=False)
         model.load_state_dict(state_dict)
         model.to(_get_device())
         model.eval()
