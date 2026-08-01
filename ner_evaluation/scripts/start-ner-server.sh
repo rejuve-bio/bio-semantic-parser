@@ -2,7 +2,7 @@
 # start-ner-server.sh
 # ─────────────────────────────────────────────────────────────────────────────
 # Starts the NER model server in a separate process.
-# Heavy models (HF NER + HunFlair) load here ONCE and stay in memory.
+# Heavy models (HunFlair) load here ONCE and stay in memory.
 # The main pipeline calls http://localhost:8001 instead of loading them locally.
 #
 # Usage:
