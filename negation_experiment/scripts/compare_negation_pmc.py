@@ -12,7 +12,6 @@ from __future__ import annotations
 import datetime
 import json
 import os
-import pathlib
 import re
 import sys
 import urllib.request
@@ -40,11 +39,11 @@ except Exception:
 
 def _fetch_europepmc_chunks(pmc_id: str) -> list[dict]:
     """Fallback fetcher when the production Fetcher/coref service is unavailable."""
-    resp = urllib.request.urlopen(
+    with urllib.request.urlopen(
         f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmc_id}/fullTextXML",
         timeout=60,
-    )
-    root = ET.fromstring(resp.read())
+    ) as resp:
+        root = ET.fromstring(resp.read())
     paragraphs = [
         "".join(p.itertext()).strip()
         for p in root.iter("p")

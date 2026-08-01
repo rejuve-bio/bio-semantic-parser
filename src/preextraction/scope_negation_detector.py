@@ -39,10 +39,19 @@ _model = None
 _model_path = ""
 
 
+import threading
+
+_lock = threading.Lock()
+
 class _MultiHeadTokenClassifier(nn.Module):
     def __init__(self, backbone_name: str, dropout: float = 0.15, num_labels: int = 2):
         super().__init__()
-        self.backbone = AutoModel.from_pretrained(backbone_name, local_files_only=True)
+        self.backbone = AutoModel.from_pretrained(
+            backbone_name,
+            local_files_only=True,
+            device_map=None,          
+            low_cpu_mem_usage=False, 
+        )
         hidden = self.backbone.config.hidden_size
         self.dropout = nn.Dropout(dropout)
         self.head_neg = nn.Linear(hidden, num_labels)
@@ -78,20 +87,30 @@ def _load_components():
     if _tokenizer is not None and _model is not None and _model_path == model_path:
         return _tokenizer, _model
 
-    os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
-    os.environ.setdefault("HF_DATASETS_OFFLINE", "1")
+    with _lock:
+        if _tokenizer is not None and _model is not None and _model_path == model_path:
+            return _tokenizer, _model
 
-    tokenizer = AutoTokenizer.from_pretrained(_BACKBONE, local_files_only=True)
-    model = _MultiHeadTokenClassifier(_BACKBONE)
-    state_dict = torch.load(model_path, map_location="cpu", weights_only=False)
-    model.load_state_dict(state_dict)
-    model.to(_get_device())
-    model.eval()
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(
+                f"[ScopeNegation] Model weights file not found at: {model_path}. "
+                f"Ensure best_model.pt is placed in the project root or set SCOPE_NEGATION_MODEL_PATH."
+            )
 
-    _tokenizer = tokenizer
-    _model = model
-    _model_path = model_path
-    return _tokenizer, _model
+        os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+        os.environ.setdefault("HF_DATASETS_OFFLINE", "1")
+
+        tokenizer = AutoTokenizer.from_pretrained(_BACKBONE, local_files_only=True)
+        model = _MultiHeadTokenClassifier(_BACKBONE)
+        state_dict = torch.load(model_path, map_location="cpu", weights_only=False)
+        model.load_state_dict(state_dict)
+        model.to(_get_device())
+        model.eval()
+
+        _tokenizer = tokenizer
+        _model = model
+        _model_path = model_path
+        return _tokenizer, _model
 
 
 # ---------------------------------------------------------------------------
@@ -150,7 +169,7 @@ def _build_word_char_offsets(sentence: str) -> list[tuple[int, int]]:
     pos = 0
     for word in sentence.split():
         # Skip any whitespace before this word
-        while pos < len(sentence) and sentence[pos] == " ":
+        while pos < len(sentence) and sentence[pos].isspace():
             pos += 1
         # The word must start at pos (split() guarantees this)
         start = pos

@@ -53,6 +53,7 @@ class NegationDetector:
     # Calibrated against biomedical test sentences:
     # 0.45 catches "no improvement" (0.89), "NOT recommended" (0.47),
     # while correctly passing "contributes to" (0.03), "enables" (0.04).
+    # 0.60 improves precision by filtering borderline contradictions (≈0.45–0.59),
 
     def __init__(self, hypothesis: str = _DEFAULT_HYPOTHESIS):
         self._hypothesis = hypothesis
