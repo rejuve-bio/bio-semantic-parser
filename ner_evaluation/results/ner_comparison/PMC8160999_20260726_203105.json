@@ -4,7 +4,7 @@
   "chunks": 1,
   "fetcher_version": "production",
   "coref_resolution": false,
-  "coref_url": null,
+  "coref_url": "<redacted>",
   "scispacy": [
     {
       "text": "[3]",

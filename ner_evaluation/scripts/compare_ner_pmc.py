@@ -350,7 +350,7 @@ def main():
     pmc_id = sys.argv[1] if len(sys.argv) > 1 else "PMC8160999"
     use_coref = "--no-coref" not in sys.argv  # Allow disabling coref with --no-coref flag
 
-    server_url = os.getenv("NER_SERVER_URL", "").strip()
+    server_url = os.getenv("NER_SERVER_URL", "http://localhost:8001").strip().rstrip("/")
     health = {}
     if not server_url:
         print(f"{YELLOW}[!] NER_SERVER_URL is not set. Server-mode NER will be skipped.{RESET}")
@@ -402,7 +402,7 @@ def main():
 
     print_comparison(spacy_ents, hun_ents, hun_ents_set, spacy_set)
 
-    out_dir = pathlib.Path("data/ner_comparison")
+    out_dir = Path(__file__).resolve().parent.parent / "results" / "ner_comparison"
     out_dir.mkdir(parents=True, exist_ok=True)
     ts      = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     out_path = out_dir / f"{pmc_id}_{ts}.json"

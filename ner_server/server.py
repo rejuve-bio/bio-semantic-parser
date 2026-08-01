@@ -85,17 +85,19 @@ def _run_hunflair(text: str, threshold: float = 0.72) -> list[dict]:
     try:
         from flair.data import Sentence
         sentence = Sentence(text[:10000])
-        _hunflair_tagger.predict(sentence)
+        with _hunflair_tagger_lock:
+            _hunflair_tagger.predict(sentence)
     except Exception as e:
         print(f"[NER-Server] HunFlair predict error: {e}", file=sys.stderr)
         return []
 
     entities: list[dict] = []
     seen: set[str] = set()
-    for span in sentence.get_spans():
+    for span in sentence.get_spans("ner"):
         word = span.text.strip()
-        label = span.tag
-        score = span.score
+        lbl = span.get_label("ner")
+        label = lbl.value
+        score = lbl.score
 
         if not word or len(word) < 2 or score < threshold:
             continue

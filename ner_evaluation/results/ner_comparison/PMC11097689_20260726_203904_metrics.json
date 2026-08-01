@@ -1,6 +1,6 @@
 {
   "pmc_id": "PMC11097689",
-  "input_file": "data/ner_comparison/PMC11097689_20260726_203904.json",
+  "input_file": "ner_evaluation/results/ner_comparison/PMC11097689_20260726_203904.json",
   "timestamp": "20260726_203904",
   "chunks_processed": 4,
   "evaluation_method": "ensemble_consensus_2plus",
@@ -69,68 +69,17 @@
       "net_entity_yield": {
         "scispacy_gain": 139,
         "hunflair_gain": 23,
-        "total_unique_entities": 210,
-        "formula": {
-          "scispacy": "Entities_scispacy \\ Entities_hunflair",
-          "hunflair": "Entities_hunflair \\ Entities_scispacy"
-        }
+        "total_unique_entities": 210
       },
       "category_specific_coverage_shift": {
         "scispacy_total": 187,
         "hunflair_total": 71,
-        "consensus_count": 48,
-        "exclusive_gains": {
-          "scispacy_only": [
-            "2006\u20132010",
-            "2017\u20132025",
-            "55 phase 3",
-            "[11].",
-            "[14]",
-            "[16,17].",
-            "[19]",
-            "[21].",
-            "[23,26]",
-            "[25",
-            "[27",
-            "[2]",
-            "[31,32",
-            "[37].",
-            "[4].",
-            "[6",
-            "[6]",
-            "advanced-stage",
-            "age-related factors",
-            "alzheimer\u2019s"
-          ],
-          "hunflair_only": [
-            "alzheimer\u2019s and related dementias",
-            "alzheimer\u2019s disease-related",
-            "amyloid \u03b242",
-            "anti-inflammatory drugs",
-            "aria-e",
-            "brain trauma",
-            "cholinesterase inhibitors",
-            "chronic traumatic encephalopathy",
-            "dementia-related",
-            "fdg-pet",
-            "fluorodeoxyglucose",
-            "frontotemporal dementia",
-            "hiv",
-            "human",
-            "human immunodeficiency virus",
-            "lewy body dementia",
-            "mild cognitive impairment",
-            "neurodegenerative condition",
-            "sars-cov-2",
-            "severe acute respiratory syndrome coronavirus"
-          ]
-        }
+        "consensus_count": 48
       },
       "high_confidence_consensus_precision_proxy": {
         "true_positive_proxy": 48,
         "scispacy_precision_proxy": 0.257,
-        "hunflair_precision_proxy": 0.676,
-        "note": "Uses the model intersection as a strict proxy for true positives; no confidence score is available in the current input files."
+        "hunflair_precision_proxy": 0.676
       },
       "span_precision_and_boundary_quality": {
         "scispacy_avg_span_len": 14.4,

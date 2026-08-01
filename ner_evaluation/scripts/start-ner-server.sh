@@ -12,7 +12,8 @@
 
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+cd "$REPO_ROOT"
 
 # Load .env so the server sees the same config as the pipeline
 if [ -f ".env" ]; then
@@ -21,7 +22,7 @@ if [ -f ".env" ]; then
     set +a
 fi
 
-PORT="${NER_SERVER_PORT:-8002}"
+PORT="${NER_SERVER_PORT:-8001}"
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "  Bio-Semantic NER Server"

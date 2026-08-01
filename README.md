@@ -133,3 +133,43 @@ data/
 
 ---
 
+## NER Model Evaluation Results (scispaCy vs. HunFlair)
+
+To evaluate the impact of different Named Entity Recognition (NER) models on the knowledge graph extraction pipeline, we performed side-by-side benchmarks on **6 PMC articles** using the production fetcher, comparing the existing **scispaCy 4-model ensemble** against **HunFlair2**.
+
+Detailed comparison logs and metrics are stored in [ner_evaluation/results/ner_comparison](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/).
+
+### Overall Evaluation Metrics (Consensus Loop)
+Across all 6 benchmarked PMC papers, a total of **2,568 unique entities** were identified:
+
+| Metric / Dimension | scispaCy Ensemble | HunFlair2 |
+|---|---|---|
+| **Total Entities Found** | 2,405 | 485 |
+| **Exclusive Entities** (only found by this model) | 2,083 | 163 |
+| **Avg. Overlap Ratio (Agreement)** | 22.2% | 64.9% |
+| **Average Span Length (Complexity)** | 12.5 - 15.1 chars | 9.0 - 15.5 chars |
+
+### Per-Paper Detailed Breakdown
+
+| Document ID | Unique (Union) | Consensus | scispaCy (Gain) | HunFlair (Gain) |
+|---|---|---|---|---|
+| [PMC8160999](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/PMC8160999_20260726_203105_metrics.json) | 149 | 51 | 111 (+60) | 89 (+38) |
+| [PMC9500000](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/PMC9500000_20260726_203401_metrics.json) | 286 | 32 | 255 (+223) | 63 (+31) |
+| [PMC11097689](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/PMC11097689_20260726_203904_metrics.json) | 210 | 48 | 187 (+139) | 71 (+23) |
+| [PMC11975295](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/PMC11975295_20260726_204055_metrics.json) | 199 | 47 | 173 (+126) | 73 (+26) |
+| [PMC12659517](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/PMC12659517_20260726_204348_metrics.json) | 1,112 | 35 | 1,098 (+1,063) | 49 (+14) |
+| [PMC13083324](file:///home/eyorica/Downloads/Bio-Semantic/bio-semantic-parser/ner_evaluation/results/ner_comparison/PMC13083324_20260726_204626_metrics.json) | 612 | 109 | 581 (+472) | 140 (+31) |
+
+### Key Findings
+1. **Precision vs. Recall**: 
+   * **scispaCy** acts as a high-recall, high-noise model. It generates a high volume of candidate entities, including a significant amount of noise (such as numbers like `3-ii`, citation references like `[112–114]`, and non-biomedical words).
+   * **HunFlair2** is highly conservative and precise. 64.9% of its predictions are confirmed by other models, and its unique predictions (+163 exclusive entities) consist of high-value, precise biomedical entities (e.g. `bcl11b`, `alexa 555`, `ctip2`).
+2. **Span Boundary Quality**:
+   * HunFlair2 captures tight, normalized spans (e.g. `bcl11b` vs scispaCy's `bcl11b (fig 3`). This directly prevents noisy tokens from entering the Pydantic schema validation step in Layer 6.
+3. **Category Strengths**:
+   * HunFlair2 shows exceptional performance on `DISEASE` (average F1 of `0.758`) and `ORGANISM` (average F1 of `0.752`).
+   * scispaCy is relatively stronger on general coverage and catches various specific `GENE_OR_GENE_PRODUCT` boundary variations.
+
+
+---
+

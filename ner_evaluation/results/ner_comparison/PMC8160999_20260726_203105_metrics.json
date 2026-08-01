@@ -1,6 +1,6 @@
 {
   "pmc_id": "PMC8160999",
-  "input_file": "data/ner_comparison/PMC8160999_20260726_203105.json",
+  "input_file": "ner_evaluation/results/ner_comparison/PMC8160999_20260726_203105.json",
   "timestamp": "20260726_203105",
   "chunks_processed": 1,
   "evaluation_method": "ensemble_consensus_2plus",
@@ -69,68 +69,17 @@
       "net_entity_yield": {
         "scispacy_gain": 60,
         "hunflair_gain": 38,
-        "total_unique_entities": 149,
-        "formula": {
-          "scispacy": "Entities_scispacy \\ Entities_hunflair",
-          "hunflair": "Entities_hunflair \\ Entities_scispacy"
-        }
+        "total_unique_entities": 149
       },
       "category_specific_coverage_shift": {
         "scispacy_total": 111,
         "hunflair_total": 89,
-        "consensus_count": 51,
-        "exclusive_gains": {
-          "scispacy_only": [
-            "93t449 cells",
-            "[14]",
-            "[14] claimed",
-            "[14] reported",
-            "[14],",
-            "[16] to",
-            "[3]",
-            "[4] also",
-            "[8",
-            "[9].",
-            "a. cordifolia leaves",
-            "aeruginosa",
-            "agri-food-pharma",
-            "alimentary tract",
-            "anticancer",
-            "bioactive molecules",
-            "bone tissue",
-            "breast cancer cell lines",
-            "ca binding sites",
-            "ca-\u03b2-lgtgase complexes"
-          ],
-          "hunflair_only": [
-            "3t3-l1",
-            "75",
-            "93t449",
-            "a. cordifolia",
-            "aspergillus niger",
-            "breast cancer.liposarcoma",
-            "ca",
-            "ca-\u03b2-lgtgase",
-            "capsicum annuum",
-            "carmagnola selezionata",
-            "carmagnola selezionataerous",
-            "dorycnium pentaphyllum subsp. haussknechtii",
-            "eif-2\u03b1",
-            "eletta campana",
-            "ellagic acid.overall",
-            "ellagic acidn",
-            "essential oils",
-            "hemp",
-            "hemp essential oil",
-            "human"
-          ]
-        }
+        "consensus_count": 51
       },
       "high_confidence_consensus_precision_proxy": {
         "true_positive_proxy": 51,
         "scispacy_precision_proxy": 0.459,
-        "hunflair_precision_proxy": 0.573,
-        "note": "Uses the model intersection as a strict proxy for true positives; no confidence score is available in the current input files."
+        "hunflair_precision_proxy": 0.573
       },
       "span_precision_and_boundary_quality": {
         "scispacy_avg_span_len": 12.5,

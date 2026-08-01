@@ -1,6 +1,6 @@
 {
   "pmc_id": "PMC13083324",
-  "input_file": "data/ner_comparison/PMC13083324_20260726_204626.json",
+  "input_file": "ner_evaluation/results/ner_comparison/PMC13083324_20260726_204626.json",
   "timestamp": "20260726_204626",
   "chunks_processed": 4,
   "evaluation_method": "ensemble_consensus_2plus",
@@ -69,68 +69,17 @@
       "net_entity_yield": {
         "scispacy_gain": 472,
         "hunflair_gain": 31,
-        "total_unique_entities": 612,
-        "formula": {
-          "scispacy": "Entities_scispacy \\ Entities_hunflair",
-          "hunflair": "Entities_hunflair \\ Entities_scispacy"
-        }
+        "total_unique_entities": 612
       },
       "category_specific_coverage_shift": {
         "scispacy_total": 581,
         "hunflair_total": 140,
-        "consensus_count": 109,
-        "exclusive_gains": {
-          "scispacy_only": [
-            "2019",
-            "2024\u20132025",
-            "3\u20134",
-            "42-amino acid variant a\u03b2\u2084\u2082",
-            "5-ht",
-            "5-ht receptor",
-            "5-ht receptor-acting",
-            "5-ht receptors",
-            "abdul-rahman",
-            "accelerating factor",
-            "acetylcholine",
-            "acetylcholinesterase",
-            "ach precursors",
-            "ad patients",
-            "ad prion-like",
-            "ad-related neuroinflammation",
-            "adam",
-            "adam17 enzymes",
-            "aducanumab",
-            "aduhelm"
-          ],
-          "hunflair_only": [
-            "abt-126",
-            "acetylcholinesterase inhibitors",
-            "amyloid-\u03b2",
-            "cholinergic deficit",
-            "cholinergic receptor",
-            "cholinesterase inhibitors",
-            "cognitive slowing",
-            "corticobasal degeneration",
-            "frontotemporal dementia",
-            "glutaminyl cyclase inhibitors",
-            "inflammatory",
-            "mapt",
-            "mitochondrial impairment",
-            "muscarinic agonist",
-            "muscarinic or nicotinic receptors",
-            "nausea",
-            "neuroinflammatory",
-            "oxidative damage",
-            "oxidative stress",
-            "patient-specific"
-          ]
-        }
+        "consensus_count": 109
       },
       "high_confidence_consensus_precision_proxy": {
         "true_positive_proxy": 109,
         "scispacy_precision_proxy": 0.188,
-        "hunflair_precision_proxy": 0.779,
-        "note": "Uses the model intersection as a strict proxy for true positives; no confidence score is available in the current input files."
+        "hunflair_precision_proxy": 0.779
       },
       "span_precision_and_boundary_quality": {
         "scispacy_avg_span_len": 13.7,
