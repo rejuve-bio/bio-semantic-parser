@@ -7,9 +7,6 @@ clause for negation using an NLI cross-encoder.
 """
 import os
 import spacy
-from flair.nn import Classifier
-from flair.data import Sentence
-from gliner import GLiNER
 from src.preextraction.ner_tagger import NERTagger
 from src.preextraction.negation_detector import NegationDetector
 from src.preextraction.doi_extractor import DOIExtractor
@@ -67,13 +64,13 @@ class Preextractor:
             doc = nlp(text)
             span_data += [(e.start_char, e.end_char, e.label_) for e in doc.ents]
 
-        all_spans = []
+        final_ents = []
         for start, end, label in span_data:
             span = base_doc.char_span(start, end, label=label, alignment_mode="expand")
             if span is not None:
                 final_ents.append(span)
 
-        base_doc.ents = spacy.util.filter_spans(all_spans)
+        base_doc.ents = spacy.util.filter_spans(final_ents)
         return base_doc
 
     def process(self, chunk: dict) -> dict:

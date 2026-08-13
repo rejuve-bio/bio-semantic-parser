@@ -1,0 +1,1549 @@
+{
+  "pmc_id": "PMC8160999",
+  "timestamp": "20260726_203105",
+  "chunks": 1,
+  "fetcher_version": "production",
+  "coref_resolution": false,
+  "coref_url": "<redacted>",
+  "scispacy": [
+    {
+      "text": "[3]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Gram-positive (Staphylococcus aureus) and Gram-negative",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Escherichia coli",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "[4] also",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "silver",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "fibers",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "oil",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "[8",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Futura",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "mice",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Leishmania tropica",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "micromolar",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "proliferator-activated receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cannabinoid CB2 receptor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "acetylcholinesterase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissue wound",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "imiquimod",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "curcumin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[9].",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "skin",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "capsaicin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "food-borne",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Listeria monocytogenes",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Helicobacter pylori",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "aeruginosa",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Botrytis cinerea",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Penicillium expansum",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Poephyromonas gingivalis",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "capsaicinoid",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "arthritis",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "diabetic neuropathy",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "carbopol-based",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Capsicum annuum fruits",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "breast cancer",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cancer",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "women",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "patient",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "anticancer",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Agri-Food-Pharma",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "breast cancer cell lines",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipid peroxidation [12]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "MCF-7 breast cancer",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell line",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "XTT",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lipid",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "extracts",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "A. cordifolia leaves",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "uercetin",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "tumoral cell death",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human healthy breast cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "quercetin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "enzymes: proto-oncogene serine/threonine-protein kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "PIM-1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "hematopoietic cell kinase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "HCK",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Liposarcoma",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "lungs",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "liver",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "sarcoma patients",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "6-Shogaol",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "human liposarcoma cell lines",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "SW872",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "93T449 cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "normal cell lines",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "normal 3T3-L1 preadipocytes",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclear DNA",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "caspase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "PARP",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "GRP-78",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "ATF4",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CHOP",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ER stress markers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "SW872 cells",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "ER",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "STAT-3",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "AMPK",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[14],",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b2-lactoglobulin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b2-LG",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "caffeic acid",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "transglutaminase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Tgase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cross-linked proteins",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "[14] claimed",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "hydrogen",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[14]",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CA binding sites",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "surface",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "[14] reported",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CA-\u03b2-LG",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CA-\u03b2-LGTgase complexes",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b1-glucosidase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03b1-amylase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "pancreatic lipase",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "enzymes",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "metabolic syndrome",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "native proteins",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "flavonoids",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "bone tissue",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Hypophthalmichthys molitrix",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "microcapsule",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ellagic acid",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "[16] to",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "alimentary tract",
+      "label": "ORGANISM_SUBDIVISION",
+      "source": "scispacy"
+    },
+    {
+      "text": "ulcers",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "ellagic",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "gastric ulcer",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "rats",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "human health",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "bioactive molecules",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    }
+  ],
+  "hunflair": [
+    {
+      "text": "Staphylococcus aureus",
+      "normalized": "staphylococcus aureus",
+      "label": "ORGANISM",
+      "start": 110,
+      "end": 131,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Escherichia coli",
+      "normalized": "escherichia coli",
+      "label": "ORGANISM",
+      "start": 152,
+      "end": 168,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Magnoporthe grisea",
+      "normalized": "magnoporthe grisea",
+      "label": "ORGANISM",
+      "start": 233,
+      "end": 251,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "silver",
+      "normalized": "silver",
+      "label": "CHEMICAL",
+      "start": 385,
+      "end": 391,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "essential oils",
+      "normalized": "essential oils",
+      "label": "CHEMICAL",
+      "start": 514,
+      "end": 528,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "water-dispersible",
+      "normalized": "water-dispersible",
+      "label": "CHEMICAL",
+      "start": 534,
+      "end": 551,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Hemp",
+      "normalized": "hemp",
+      "label": "ORGANISM",
+      "start": 637,
+      "end": 641,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "hemp essential oil",
+      "normalized": "hemp essential oil",
+      "label": "CHEMICAL",
+      "start": 718,
+      "end": 736,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "75",
+      "normalized": "75",
+      "label": "ORGANISM",
+      "start": 919,
+      "end": 921,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.943,
+      "source": "hunflair"
+    },
+    {
+      "text": "Carmagnola selezionata",
+      "normalized": "carmagnola selezionata",
+      "label": "ORGANISM",
+      "start": 923,
+      "end": 945,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Eletta campana",
+      "normalized": "eletta campana",
+      "label": "ORGANISM",
+      "start": 950,
+      "end": 964,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "mice",
+      "normalized": "mice",
+      "label": "ORGANISM",
+      "start": 1251,
+      "end": 1255,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Leishmania tropica",
+      "normalized": "leishmania tropica",
+      "label": "ORGANISM",
+      "start": 1314,
+      "end": 1332,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "selina-3,7(11)-diene",
+      "normalized": "selina-3,7(11)-diene",
+      "label": "CHEMICAL",
+      "start": 1397,
+      "end": 1417,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "proliferator-activated receptor \u03b1",
+      "normalized": "proliferator-activated receptor \u03b1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 1479,
+      "end": 1512,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cannabinoid CB2 receptor",
+      "normalized": "cannabinoid cb2 receptor",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 1514,
+      "end": 1538,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "acetylcholinesterase",
+      "normalized": "acetylcholinesterase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 1543,
+      "end": 1563,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "Leishmania tropica.Nanotechnology",
+      "normalized": "leishmania tropica.nanotechnology",
+      "label": "ORGANISM",
+      "start": 1756,
+      "end": 1789,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "imiquimod",
+      "normalized": "imiquimod",
+      "label": "CHEMICAL",
+      "start": 1996,
+      "end": 2005,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "curcumin",
+      "normalized": "curcumin",
+      "label": "CHEMICAL",
+      "start": 2026,
+      "end": 2034,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "psoriasis-like",
+      "normalized": "psoriasis-like",
+      "label": "DISEASE",
+      "start": 2517,
+      "end": 2531,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "capsaicin",
+      "normalized": "capsaicin",
+      "label": "CHEMICAL",
+      "start": 2645,
+      "end": 2654,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Listeria monocytogenes",
+      "normalized": "listeria monocytogenes",
+      "label": "ORGANISM",
+      "start": 2742,
+      "end": 2764,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Helicobacter pylori",
+      "normalized": "helicobacter pylori",
+      "label": "ORGANISM",
+      "start": 2766,
+      "end": 2785,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Pseudomonas aeruginosa",
+      "normalized": "pseudomonas aeruginosa",
+      "label": "ORGANISM",
+      "start": 2787,
+      "end": 2809,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Botrytis cinerea",
+      "normalized": "botrytis cinerea",
+      "label": "ORGANISM",
+      "start": 2811,
+      "end": 2827,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Aspergillus niger",
+      "normalized": "aspergillus niger",
+      "label": "ORGANISM",
+      "start": 2829,
+      "end": 2846,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Penicillium expansum",
+      "normalized": "penicillium expansum",
+      "label": "ORGANISM",
+      "start": 2874,
+      "end": 2894,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Vibrio cholerae",
+      "normalized": "vibrio cholerae",
+      "label": "ORGANISM",
+      "start": 2969,
+      "end": 2984,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Poephyromonas gingivalis",
+      "normalized": "poephyromonas gingivalis",
+      "label": "ORGANISM",
+      "start": 2990,
+      "end": 3014,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "capsaicinoid",
+      "normalized": "capsaicinoid",
+      "label": "CHEMICAL",
+      "start": 3038,
+      "end": 3050,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "rheumatism",
+      "normalized": "rheumatism",
+      "label": "DISEASE",
+      "start": 3172,
+      "end": 3182,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "arthritis",
+      "normalized": "arthritis",
+      "label": "DISEASE",
+      "start": 3184,
+      "end": 3193,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "diabetic neuropathy",
+      "normalized": "diabetic neuropathy",
+      "label": "DISEASE",
+      "start": 3198,
+      "end": 3217,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "carbopol-based",
+      "normalized": "carbopol-based",
+      "label": "CHEMICAL",
+      "start": 3236,
+      "end": 3250,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Capsicum annuum",
+      "normalized": "capsicum annuum",
+      "label": "ORGANISM",
+      "start": 3299,
+      "end": 3314,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "breast cancer",
+      "normalized": "breast cancer",
+      "label": "DISEASE",
+      "start": 3596,
+      "end": 3609,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cancer",
+      "normalized": "cancer",
+      "label": "DISEASE",
+      "start": 3632,
+      "end": 3638,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "women",
+      "normalized": "women",
+      "label": "ORGANISM",
+      "start": 3642,
+      "end": 3647,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.997,
+      "source": "hunflair"
+    },
+    {
+      "text": "patient",
+      "normalized": "patient",
+      "label": "ORGANISM",
+      "start": 3917,
+      "end": 3924,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.989,
+      "source": "hunflair"
+    },
+    {
+      "text": "Dorycnium pentaphyllum subsp. haussknechtii",
+      "normalized": "dorycnium pentaphyllum subsp. haussknechtii",
+      "label": "ORGANISM",
+      "start": 4505,
+      "end": 4548,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "lipid",
+      "normalized": "lipid",
+      "label": "CHEMICAL",
+      "start": 4644,
+      "end": 4649,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.755,
+      "source": "hunflair"
+    },
+    {
+      "text": "MCF-7",
+      "normalized": "mcf-7",
+      "label": "CELL_LINE",
+      "start": 4818,
+      "end": 4823,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.988,
+      "source": "hunflair"
+    },
+    {
+      "text": "Carmagnola selezionataerous",
+      "normalized": "carmagnola selezionataerous",
+      "label": "ORGANISM",
+      "start": 4842,
+      "end": 4869,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "A. cordifolia",
+      "normalized": "a. cordifolia",
+      "label": "ORGANISM",
+      "start": 5167,
+      "end": 5180,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "uercetin",
+      "normalized": "uercetin",
+      "label": "CHEMICAL",
+      "start": 5199,
+      "end": 5207,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "human",
+      "normalized": "human",
+      "label": "ORGANISM",
+      "start": 5407,
+      "end": 5412,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "quercetin",
+      "normalized": "quercetin",
+      "label": "CHEMICAL",
+      "start": 5489,
+      "end": 5498,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "proto-oncogene serine/threonine-protein kinase",
+      "normalized": "proto-oncogene serine/threonine-protein kinase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5520,
+      "end": 5566,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "PIM-1",
+      "normalized": "pim-1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5568,
+      "end": 5573,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "hematopoietic cell kinase",
+      "normalized": "hematopoietic cell kinase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5579,
+      "end": 5604,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "HCK",
+      "normalized": "hck",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 5606,
+      "end": 5609,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "breast cancer.Liposarcoma",
+      "normalized": "breast cancer.liposarcoma",
+      "label": "DISEASE",
+      "start": 5634,
+      "end": 5659,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "LS",
+      "normalized": "ls",
+      "label": "DISEASE",
+      "start": 5661,
+      "end": 5663,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "sarcoma",
+      "normalized": "sarcoma",
+      "label": "DISEASE",
+      "start": 6020,
+      "end": 6027,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "6-Shogaol",
+      "normalized": "6-shogaol",
+      "label": "CHEMICAL",
+      "start": 6295,
+      "end": 6304,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "liposarcoma",
+      "normalized": "liposarcoma",
+      "label": "DISEASE",
+      "start": 6525,
+      "end": 6536,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "SW872",
+      "normalized": "sw872",
+      "label": "CELL_LINE",
+      "start": 6549,
+      "end": 6554,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.995,
+      "source": "hunflair"
+    },
+    {
+      "text": "93T449",
+      "normalized": "93t449",
+      "label": "CELL_LINE",
+      "start": 6559,
+      "end": 6565,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.996,
+      "source": "hunflair"
+    },
+    {
+      "text": "3T3-L1",
+      "normalized": "3t3-l1",
+      "label": "CELL_LINE",
+      "start": 6802,
+      "end": 6808,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.813,
+      "source": "hunflair"
+    },
+    {
+      "text": "caspase",
+      "normalized": "caspase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7011,
+      "end": 7018,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "PARP",
+      "normalized": "parp",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7032,
+      "end": 7036,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "GRP-78",
+      "normalized": "grp-78",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7155,
+      "end": 7161,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "eIF-2\u03b1",
+      "normalized": "eif-2\u03b1",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7163,
+      "end": 7169,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ATF4",
+      "normalized": "atf4",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7171,
+      "end": 7175,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CHOP",
+      "normalized": "chop",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7181,
+      "end": 7185,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "STAT-3",
+      "normalized": "stat-3",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7478,
+      "end": 7484,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "AMPK",
+      "normalized": "ampk",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7486,
+      "end": 7490,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "\u03b2-lactoglobulin",
+      "normalized": "\u03b2-lactoglobulin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7634,
+      "end": 7649,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "\u03b2-LG",
+      "normalized": "\u03b2-lg",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7651,
+      "end": 7655,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "caffeic acid",
+      "normalized": "caffeic acid",
+      "label": "CHEMICAL",
+      "start": 7662,
+      "end": 7674,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CA",
+      "normalized": "ca",
+      "label": "CHEMICAL",
+      "start": 7676,
+      "end": 7678,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "hydrogen",
+      "normalized": "hydrogen",
+      "label": "CHEMICAL",
+      "start": 8008,
+      "end": 8016,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "CA-\u03b2-LG",
+      "normalized": "ca-\u03b2-lg",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8208,
+      "end": 8215,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.83,
+      "source": "hunflair"
+    },
+    {
+      "text": "CA-\u03b2-LGTgase",
+      "normalized": "ca-\u03b2-lgtgase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8220,
+      "end": 8232,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.965,
+      "source": "hunflair"
+    },
+    {
+      "text": "\u03b1-glucosidase",
+      "normalized": "\u03b1-glucosidase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8341,
+      "end": 8354,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "\u03b1-amylase",
+      "normalized": "\u03b1-amylase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8356,
+      "end": 8365,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "pancreatic lipase",
+      "normalized": "pancreatic lipase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 8371,
+      "end": 8388,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "flavonoids",
+      "normalized": "flavonoids",
+      "label": "CHEMICAL",
+      "start": 8619,
+      "end": 8629,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "onion",
+      "normalized": "onion",
+      "label": "ORGANISM",
+      "start": 8746,
+      "end": 8751,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.994,
+      "source": "hunflair"
+    },
+    {
+      "text": "phytophagous carp",
+      "normalized": "phytophagous carp",
+      "label": "ORGANISM",
+      "start": 8822,
+      "end": 8839,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Hypophthalmichthys molitrix",
+      "normalized": "hypophthalmichthys molitrix",
+      "label": "ORGANISM",
+      "start": 8841,
+      "end": 8868,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ellagic acid",
+      "normalized": "ellagic acid",
+      "label": "CHEMICAL",
+      "start": 9239,
+      "end": 9251,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "peptic ulcers",
+      "normalized": "peptic ulcers",
+      "label": "DISEASE",
+      "start": 9394,
+      "end": 9407,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Polysaccharide",
+      "normalized": "polysaccharide",
+      "label": "CHEMICAL",
+      "start": 9409,
+      "end": 9423,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "ellagic acidn",
+      "normalized": "ellagic acidn",
+      "label": "CHEMICAL",
+      "start": 9446,
+      "end": 9459,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "gastric ulcer",
+      "normalized": "gastric ulcer",
+      "label": "DISEASE",
+      "start": 9489,
+      "end": 9502,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "rats",
+      "normalized": "rats",
+      "label": "ORGANISM",
+      "start": 9512,
+      "end": 9516,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ellagic acid.Overall",
+      "normalized": "ellagic acid.overall",
+      "label": "CHEMICAL",
+      "start": 9543,
+      "end": 9563,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    }
+  ],
+  "scispacy_count": 111,
+  "hunflair_count": 89,
+  "hunflair_new_count": 38
+}

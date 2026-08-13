@@ -1,0 +1,1983 @@
+{
+  "pmc_id": "PMC9500000",
+  "timestamp": "20260726_203401",
+  "chunks": 6,
+  "fetcher_version": "production",
+  "coref_resolution": true,
+  "coref_url": "<redacted>",
+  "scispacy": [
+    {
+      "text": "Organoids",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "disease",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural organoids",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissues",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Huntington\u2019s disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "bromodomain inhibitors revert complex",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurological disorders",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "blood-brain",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cellular",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "mutant Huntingtin",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "HTT",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "three-dimensional (3D)",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural spheroids",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "radial",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "cortex",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "organoid",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "autosomal neurodegenerative disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CAG repeats",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "HTT protein",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "human fetal samples",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "human organoid",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "micropattern-based",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "ectodermal compartment",
+      "label": "ANATOMICAL_SYSTEM",
+      "source": "scispacy"
+    },
+    {
+      "text": "human embryonic stem cell",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "CAG",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "wild type (WT)",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuronal",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "human HD neurons",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human embryo",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "ectodermal lineages",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural crest",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "placode",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "epidermis",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell lines",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural tissue",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mutant HTT",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "wild type",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural network",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "reversal.(C) Example wells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD organoids",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural progenitor",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "PAX6",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "actin marker",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "nHD",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Z\u2032 factors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "OE",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "HTT\u2212/\u2212",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "HTT-OE",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "WT",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "actin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "phalloidin",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Z\u2032 factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "HTS",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "inter-organoid",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural networks",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Z\u2032",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD neuruloids",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "S1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "STAR",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "UMAP",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Becht",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "Huntingtin gene",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "WT (Figure 1G",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "PAX6+ domain",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "N-cadherin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "phalloidin stains",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "WT class",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "toxicity",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "WT \u201crescued",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neural networks extract",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "latent vector",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "MTT",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "S2D",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "method(high",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "death",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "3E",
+      "label": "ORGANISM_SUBSTANCE",
+      "source": "scispacy"
+    },
+    {
+      "text": "tissue",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "3Screen",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "nadditional HD",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "nadditional Huntington\u2019s disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "broad-spectrum",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "acetyl-lysine reader bromodomains",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRDs",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Sadri-Vakili",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "3H",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "bromosporine",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03bcM",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD4",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD9",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "CECR2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "low adverse",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD9-specific",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD9\u2014all",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "low adverse effect",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "bromodomain",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "bromodomain inhibitors (",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "cortical neurons",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BDNF",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD neurons",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "neuruloid protocol",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "collagen IV",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "SOX10",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD cell line",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "72-length CAG repeat",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "56CAG lines",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "DAPI",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "S3C",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "S3E",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "56CAG and 72CAG phenotypes (Figure 4F)",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "S3F",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Li",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "iBRDs",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain-derived neurotrophic factor",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "hESC lines",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD neuron",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurons",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "apoptosis markers",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "MAP2+ projection length",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurodegeneration",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD phenotype disease",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "WT (Figure 1H",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD clusterss disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD neuruloid",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "HD neuruloid phenotypeisease",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u2019s disease",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "human microtissues",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "3D organoids",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "organoid cultures",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "brain organoids",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "cells",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "3D",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "murine",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "striatum",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "patients",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "roots",
+      "label": "ORGAN",
+      "source": "scispacy"
+    },
+    {
+      "text": "pre-manifest",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "neurotoxicity",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Network-based Cellular Signatures",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "Stathias",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "chromatin-modifying enzymes",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "genomic sites",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "Muller",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "DNA",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "histone",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "histone deacetylase",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD family",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "BET",
+      "label": "AMINO_ACID",
+      "source": "scispacy"
+    },
+    {
+      "text": "BRD JQ1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "mouse",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "BET BRD JQ1",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclei",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "3D organoid",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclear",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Rabbit PolyclonalBioLegend901301PAX6 Mouse monoclonalBD Biosciences561462SOX10 Goat PolyclonalR&DAF2864COL4 Rabbit PolyclonalAbcamab6586MAP2 Chicken",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "recombinant proteinsLaminin-521BioLaminaLN521-03Rock inhibitor Y27632Abcamab120129AccutaseStem Cell",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "stem cell lineRockefeller",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "KO",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "WT overexpressionThis paperN/ASoftware",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Imagehttps://scikit-image.org/",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "line",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "genetically engineered clones",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "female RUES2",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "NIH #0013) parental cell line",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Brivanlou lab",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "NIH Human Embryonic Stem Cell",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "mouse embryonic fibroblasts",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "bFGF",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CYTOOCHIPS",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "EMB A",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BioLamina",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Calcium",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Magnesium",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "laminin",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Stem Cell",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Accutase",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Rock inhibitor Y27632 (",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "Abcam",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03bcM SB431542",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Day 3",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "BMP4",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "donkey serum",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Jackson Immunoresearch",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "Triton X-100",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "primary antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alexa 488",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alexa",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alexa 647",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fisher Scientific D1306",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "antibodies",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fab fragment IgG",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Z planes",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "micropatterned 96",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "laminin for 3",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "surface",
+      "label": "CELLULAR_COMPONENT",
+      "source": "scispacy"
+    },
+    {
+      "text": "VP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "V&P",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "lens",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "56CAG and 2 control plates",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "20CAG",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "treated plates",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Hit molecules",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "MK-2461",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ponatinib",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "CC",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "lines",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "1\u00d7105 cells/cm2",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "TGF\u03b2",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03bcM SB-431542",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Sigma",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03bcM LDN-193189",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "StemGent",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "FGF8",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "R&D",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "12\u201322",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "CTIP2 (BCL11B)-positive cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    },
+    {
+      "text": "polyornithine/laminin",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "IGF1",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "cAMP",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "ascorbic acid",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "growth factors",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "MAP2",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Otsu",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "liquid left",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fastai library",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "network",
+      "label": "MULTI_TISSUE_STRUCTURE",
+      "source": "scispacy"
+    },
+    {
+      "text": "resnet18",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Imagenet",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "Fastai library (",
+      "label": "DNA",
+      "source": "scispacy"
+    },
+    {
+      "text": "layers frozen",
+      "label": "CANCER",
+      "source": "scispacy"
+    },
+    {
+      "text": "one-cycle learning",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Ba",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "^-6",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "nuclear DAPI stains",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "\u03bcM neuruloid",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "colonies",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "pretrained networks",
+      "label": "PROTEIN",
+      "source": "scispacy"
+    },
+    {
+      "text": "layers",
+      "label": "TISSUE",
+      "source": "scispacy"
+    },
+    {
+      "text": "sigmoid layer",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "Lead contact",
+      "label": "PATHOLOGICAL_FORMATION",
+      "source": "scispacy"
+    },
+    {
+      "text": "clones",
+      "label": "CELL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Micropatterned cell culture",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "Alexa 488 Fab",
+      "label": "CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "Isogenic lines",
+      "label": "CELL_LINE",
+      "source": "scispacy"
+    },
+    {
+      "text": "https://doi.org/10.5281/zenodo.7009263.Any",
+      "label": "DISEASE",
+      "source": "scispacy"
+    },
+    {
+      "text": "J.J.M.",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "source": "scispacy"
+    },
+    {
+      "text": "F.E.",
+      "label": "SIMPLE_CHEMICAL",
+      "source": "scispacy"
+    },
+    {
+      "text": "S.G.",
+      "label": "ORGANISM",
+      "source": "scispacy"
+    },
+    {
+      "text": "differentiated cells",
+      "label": "CELL_TYPE",
+      "source": "scispacy"
+    }
+  ],
+  "hunflair": [
+    {
+      "text": "Huntington\u2019s disease",
+      "normalized": "huntington\u2019s disease",
+      "label": "DISEASE",
+      "start": 811,
+      "end": 831,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "HD",
+      "normalized": "hd",
+      "label": "DISEASE",
+      "start": 833,
+      "end": 835,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurological disorders",
+      "normalized": "neurological disorders",
+      "label": "DISEASE",
+      "start": 116,
+      "end": 138,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "human",
+      "normalized": "human",
+      "label": "ORGANISM",
+      "start": 1684,
+      "end": 1689,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.993,
+      "source": "hunflair"
+    },
+    {
+      "text": "Huntingtin",
+      "normalized": "huntingtin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 1773,
+      "end": 1783,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "HTT",
+      "normalized": "htt",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 1785,
+      "end": 1788,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "autosomal neurodegenerative disease",
+      "normalized": "autosomal neurodegenerative disease",
+      "label": "DISEASE",
+      "start": 3376,
+      "end": 3411,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "degenerative disease",
+      "normalized": "degenerative disease",
+      "label": "DISEASE",
+      "start": 3575,
+      "end": 3595,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "PAX6",
+      "normalized": "pax6",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 2290,
+      "end": 2294,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.988,
+      "source": "hunflair"
+    },
+    {
+      "text": "HTT-OE",
+      "normalized": "htt-oe",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 3345,
+      "end": 3351,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "WT",
+      "normalized": "wt",
+      "label": "DISEASE",
+      "start": 6970,
+      "end": 6972,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.85,
+      "source": "hunflair"
+    },
+    {
+      "text": "phalloidin",
+      "normalized": "phalloidin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7076,
+      "end": 7086,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.799,
+      "source": "hunflair"
+    },
+    {
+      "text": "neuruloids",
+      "normalized": "neuruloids",
+      "label": "DISEASE",
+      "start": 9371,
+      "end": 9381,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.997,
+      "source": "hunflair"
+    },
+    {
+      "text": "N-cadherin",
+      "normalized": "n-cadherin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9783,
+      "end": 9793,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurological diseases",
+      "normalized": "neurological diseases",
+      "label": "DISEASE",
+      "start": 3153,
+      "end": 3174,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "neurotoxicity",
+      "normalized": "neurotoxicity",
+      "label": "DISEASE",
+      "start": 4942,
+      "end": 4955,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BRD",
+      "normalized": "brd",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6245,
+      "end": 6248,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BRDs",
+      "normalized": "brds",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6354,
+      "end": 6358,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "\u03b5-N-acetyl-lysine",
+      "normalized": "\u03b5-n-acetyl-lysine",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6388,
+      "end": 6405,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "histone deacetylase",
+      "normalized": "histone deacetylase",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 6790,
+      "end": 6809,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "mouse",
+      "normalized": "mouse",
+      "label": "ORGANISM",
+      "start": 6880,
+      "end": 6885,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "cancer-related",
+      "normalized": "cancer-related",
+      "label": "DISEASE",
+      "start": 7242,
+      "end": 7256,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BET BRD",
+      "normalized": "bet brd",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7394,
+      "end": 7401,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "BRD4",
+      "normalized": "brd4",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7581,
+      "end": 7585,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BRD9",
+      "normalized": "brd9",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 7644,
+      "end": 7648,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "HUESM medium",
+      "normalized": "huesm medium",
+      "label": "CHEMICAL",
+      "start": 394,
+      "end": 406,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "bFGF",
+      "normalized": "bfgf",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 492,
+      "end": 496,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.858,
+      "source": "hunflair"
+    },
+    {
+      "text": "H1",
+      "normalized": "h1",
+      "label": "CHEMICAL",
+      "start": 682,
+      "end": 684,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.856,
+      "source": "hunflair"
+    },
+    {
+      "text": "DMEM",
+      "normalized": "dmem",
+      "label": "CHEMICAL",
+      "start": 735,
+      "end": 739,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "F12",
+      "normalized": "f12",
+      "label": "CHEMICAL",
+      "start": 757,
+      "end": 760,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.827,
+      "source": "hunflair"
+    },
+    {
+      "text": "Geltrex",
+      "normalized": "geltrex",
+      "label": "CHEMICAL",
+      "start": 947,
+      "end": 954,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "PBS",
+      "normalized": "pbs",
+      "label": "CHEMICAL",
+      "start": 1302,
+      "end": 1305,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Calcium",
+      "normalized": "calcium",
+      "label": "CHEMICAL",
+      "start": 1327,
+      "end": 1334,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Magnesium",
+      "normalized": "magnesium",
+      "label": "CHEMICAL",
+      "start": 1339,
+      "end": 1348,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Rock",
+      "normalized": "rock",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 2120,
+      "end": 2124,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Y27632",
+      "normalized": "y27632",
+      "label": "CHEMICAL",
+      "start": 2135,
+      "end": 2141,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "ab120129",
+      "normalized": "ab120129",
+      "label": "CHEMICAL",
+      "start": 2156,
+      "end": 2164,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.997,
+      "source": "hunflair"
+    },
+    {
+      "text": "SB431542",
+      "normalized": "sb431542",
+      "label": "CHEMICAL",
+      "start": 2472,
+      "end": 2480,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "LDN 193189",
+      "normalized": "ldn 193189",
+      "label": "CHEMICAL",
+      "start": 2492,
+      "end": 2502,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "HUESM",
+      "normalized": "huesm",
+      "label": "CHEMICAL",
+      "start": 2543,
+      "end": 2548,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "DMEM/F12",
+      "normalized": "dmem/f12",
+      "label": "CHEMICAL",
+      "start": 3333,
+      "end": 3341,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.855,
+      "source": "hunflair"
+    },
+    {
+      "text": "paraformaldehyde",
+      "normalized": "paraformaldehyde",
+      "label": "CHEMICAL",
+      "start": 5372,
+      "end": 5388,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Triton X-100",
+      "normalized": "triton x-100",
+      "label": "CHEMICAL",
+      "start": 5595,
+      "end": 5607,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alexa 488",
+      "normalized": "alexa 488",
+      "label": "CHEMICAL",
+      "start": 5805,
+      "end": 5814,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alexa 555",
+      "normalized": "alexa 555",
+      "label": "CHEMICAL",
+      "start": 5816,
+      "end": 5825,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.961,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alexa 594",
+      "normalized": "alexa 594",
+      "label": "CHEMICAL",
+      "start": 5827,
+      "end": 5836,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "Alexa 647",
+      "normalized": "alexa 647",
+      "label": "CHEMICAL",
+      "start": 5840,
+      "end": 5849,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "4\u2032,6-diamidino-2-phenylindole",
+      "normalized": "4\u2032,6-diamidino-2-phenylindole",
+      "label": "CHEMICAL",
+      "start": 5902,
+      "end": 5931,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "DAPI",
+      "normalized": "dapi",
+      "label": "CHEMICAL",
+      "start": 5933,
+      "end": 5937,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Gold",
+      "normalized": "gold",
+      "label": "CHEMICAL",
+      "start": 6260,
+      "end": 6264,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.999,
+      "source": "hunflair"
+    },
+    {
+      "text": "Bromosporine",
+      "normalized": "bromosporine",
+      "label": "CHEMICAL",
+      "start": 9253,
+      "end": 9265,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "BI-D1879",
+      "normalized": "bi-d1879",
+      "label": "CHEMICAL",
+      "start": 9274,
+      "end": 9282,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "MK-2461",
+      "normalized": "mk-2461",
+      "label": "CHEMICAL",
+      "start": 9291,
+      "end": 9298,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "Ponatinib",
+      "normalized": "ponatinib",
+      "label": "CHEMICAL",
+      "start": 9307,
+      "end": 9316,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "TGF\u03b2",
+      "normalized": "tgf\u03b2",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9647,
+      "end": 9651,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.99,
+      "source": "hunflair"
+    },
+    {
+      "text": "SB-431542",
+      "normalized": "sb-431542",
+      "label": "CHEMICAL",
+      "start": 9670,
+      "end": 9679,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "LDN-193189",
+      "normalized": "ldn-193189",
+      "label": "CHEMICAL",
+      "start": 9698,
+      "end": 9708,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "FGF8",
+      "normalized": "fgf8",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9762,
+      "end": 9766,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.997,
+      "source": "hunflair"
+    },
+    {
+      "text": "CTIP2",
+      "normalized": "ctip2",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9825,
+      "end": 9830,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "BCL11B",
+      "normalized": "bcl11b",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9832,
+      "end": 9838,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.998,
+      "source": "hunflair"
+    },
+    {
+      "text": "polyornithine",
+      "normalized": "polyornithine",
+      "label": "CHEMICAL",
+      "start": 9902,
+      "end": 9915,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 1.0,
+      "source": "hunflair"
+    },
+    {
+      "text": "laminin",
+      "normalized": "laminin",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9916,
+      "end": 9923,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.993,
+      "source": "hunflair"
+    },
+    {
+      "text": "BDNF",
+      "normalized": "bdnf",
+      "label": "GENE_OR_GENE_PRODUCT",
+      "start": 9975,
+      "end": 9979,
+      "negated": false,
+      "assertion": "PRESENT",
+      "confidence": 0.997,
+      "source": "hunflair"
+    }
+  ],
+  "scispacy_count": 255,
+  "hunflair_count": 63,
+  "hunflair_new_count": 31
+}

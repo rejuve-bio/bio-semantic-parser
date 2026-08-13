@@ -1,0 +1,160 @@
+{
+  "pmc_id": "PMC9500000",
+  "input_file": "ner_evaluation/results/ner_comparison/PMC9500000_20260726_203401.json",
+  "timestamp": "20260726_203401",
+  "chunks_processed": 6,
+  "evaluation_method": "ensemble_consensus_2plus",
+  "overall_metrics": {
+    "total_unique_entities": 286,
+    "consensus_count": 32,
+    "scispacy": {
+      "total_count": 255,
+      "exclusive_count": 223,
+      "avg_span_len": 12.7,
+      "overlap_ratio": 0.125
+    },
+    "hunflair": {
+      "total_count": 63,
+      "exclusive_count": 31,
+      "avg_span_len": 9.0,
+      "overlap_ratio": 0.508
+    },
+    "exclusive_gains": {
+      "scispacy_only": [
+        "12\u201322",
+        "1\u00d7105 cells/cm2",
+        "20cag",
+        "3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide",
+        "3d",
+        "3d organoid",
+        "3d organoids",
+        "3e",
+        "3h",
+        "3screen",
+        "56cag and 2 control plates",
+        "56cag and 72cag phenotypes (figure 4f)",
+        "56cag lines",
+        "72-length cag repeat",
+        "^-6",
+        "abcam",
+        "accutase",
+        "acetyl-lysine reader bromodomains",
+        "actin",
+        "actin marker"
+      ],
+      "hunflair_only": [
+        "4\u2032,6-diamidino-2-phenylindole",
+        "ab120129",
+        "alexa 555",
+        "alexa 594",
+        "bcl11b",
+        "bet brd",
+        "bi-d1879",
+        "cancer-related",
+        "ctip2",
+        "degenerative disease",
+        "dmem",
+        "dmem/f12",
+        "f12",
+        "geltrex",
+        "gold",
+        "h1",
+        "huesm",
+        "huesm medium",
+        "huntingtin",
+        "ldn 193189"
+      ]
+    },
+    "comparison_lenses": {
+      "net_entity_yield": {
+        "scispacy_gain": 223,
+        "hunflair_gain": 31,
+        "total_unique_entities": 286
+      },
+      "category_specific_coverage_shift": {
+        "scispacy_total": 255,
+        "hunflair_total": 63,
+        "consensus_count": 32
+      },
+      "high_confidence_consensus_precision_proxy": {
+        "true_positive_proxy": 32,
+        "scispacy_precision_proxy": 0.125,
+        "hunflair_precision_proxy": 0.508
+      },
+      "span_precision_and_boundary_quality": {
+        "scispacy_avg_span_len": 12.7,
+        "hunflair_avg_span_len": 9.0
+      }
+    }
+  },
+  "per_label_metrics": {
+    "CHEMICAL": {
+      "consensus_count": 7,
+      "models": {
+        "scispacy": {
+          "precision": 0.28,
+          "recall": 1.0,
+          "f1": 0.438,
+          "count": 25
+        },
+        "hunflair": {
+          "precision": 0.233,
+          "recall": 1.0,
+          "f1": 0.378,
+          "count": 30
+        }
+      }
+    },
+    "DISEASE": {
+      "consensus_count": 5,
+      "models": {
+        "scispacy": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "count": 20
+        },
+        "hunflair": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "count": 10
+        }
+      }
+    },
+    "GENE_OR_GENE_PRODUCT": {
+      "consensus_count": 2,
+      "models": {
+        "scispacy": {
+          "precision": 0.118,
+          "recall": 1.0,
+          "f1": 0.211,
+          "count": 17
+        },
+        "hunflair": {
+          "precision": 0.095,
+          "recall": 1.0,
+          "f1": 0.174,
+          "count": 21
+        }
+      }
+    },
+    "ORGANISM": {
+      "consensus_count": 2,
+      "models": {
+        "scispacy": {
+          "precision": 0.105,
+          "recall": 1.0,
+          "f1": 0.19,
+          "count": 19
+        },
+        "hunflair": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "count": 2
+        }
+      }
+    }
+  }
+}
