@@ -1,0 +1,38 @@
+name: Deploy — Build & Start on Server
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f967dacf36262 # v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            set -e
+            cd "${{ secrets.DEPLOY_COMPOSE_PATH }}"
+
+            # Pull the latest code from main
+            git fetch origin
+            git checkout main
+            git pull origin main
+
+            # Rebuild images and restart containers.
+            # Data is safe: ./data is a bind-mount (line 41 in docker-compose.yml),
+            # so it lives on the host filesystem and is never touched by --build.
+            # --remove-orphans cleans up containers for services removed from compose.
+            docker compose up -d --build --remove-orphans
+
+            # Free up disk space from old dangling image layers
+            docker image prune -f
