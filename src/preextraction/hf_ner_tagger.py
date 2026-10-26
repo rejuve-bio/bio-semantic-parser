@@ -94,6 +94,14 @@ def _get_pipeline():
         else:
             device = -1   # CPU
 
+        # Ensure tokenizer model_max_length is realistically bounded to model's positional embeddings
+        max_pos = getattr(getattr(model, "config", None), "max_position_embeddings", 512)
+        if not isinstance(max_pos, int) or max_pos <= 0:
+            max_pos = 512
+        if hasattr(tokenizer, "model_max_length"):
+            if not isinstance(tokenizer.model_max_length, int) or tokenizer.model_max_length > max_pos:
+                tokenizer.model_max_length = max_pos
+
         new_pipeline = _hf_pipeline(
             "ner",
             model=model,
@@ -111,89 +119,156 @@ def should_run() -> bool:
     return os.getenv("HF_NER_ENABLED", "true").lower() == "true"
 
 
+def _split_text_windows(text: str, max_chars: int = 1500) -> list[tuple[int, str]]:
+    r"""Split text into sentence-aware windows <= max_chars to stay within model token limits.
+    Windows are contiguous exact substring slices of text, preserving pixel-perfect character offsets.
+    Priority order for split points:
+      1. Sentence boundaries ((?<=[.!?\n])\s+)
+      2. Word boundaries (\s+)
+      3. Hard character slice at max_chars
+    Guarantees:
+      - len(w_text) <= max_chars for every returned window
+      - text[w_offset : w_offset + len(w_text)] == w_text
+      - "".join(w_text for _, w_text in windows) == text
+    """
+    if not text:
+        return []
+    if len(text) <= max_chars:
+        return [(0, text)]
+
+    windows = []
+    w_start = 0
+    n = len(text)
+    import re
+
+    sent_boundary = re.compile(r'(?<=[.!?\n])\s+')
+    word_boundary = re.compile(r'\s+')
+
+    while w_start < n:
+        remaining = n - w_start
+        if remaining <= max_chars:
+            windows.append((w_start, text[w_start:]))
+            break
+
+        target_end = w_start + max_chars
+        candidate = text[w_start:target_end]
+
+        # 1. Prefer sentence boundary
+        split_pos = -1
+        for m in sent_boundary.finditer(candidate):
+            if m.end() > 0:
+                split_pos = m.end()
+
+        # 2. Fall back to word boundary within window
+        if split_pos <= 0:
+            for m in word_boundary.finditer(candidate):
+                if m.end() > 0:
+                    split_pos = m.end()
+
+        # 3. Fall back to hard slice at max_chars for unbroken text
+        if split_pos <= 0:
+            split_pos = max_chars
+
+        w_end = w_start + split_pos
+        windows.append((w_start, text[w_start:w_end]))
+        w_start = w_end
+
+    return windows
+
+
 def tag_entities(text: str) -> list[dict]:
     """
-    Run the HuggingFace NER model on text.
+    Run the HuggingFace NER model on text using sentence-aware windows.
     Returns entity dicts in the same format as NERTagger.from_doc().
     Only entities with mapped labels (not OTHER) and score >= HF_NER_THRESHOLD
     are returned.
     """
-    if not should_run():
+    if not should_run() or not text:
         return []
 
     threshold = float(os.getenv("HF_NER_THRESHOLD", "0.80"))
+    try:
+        max_chars = int(os.getenv("HF_NER_MAX_CHARS", "1500"))
+    except ValueError:
+        max_chars = 1500
 
     try:
-        pipe    = _get_pipeline()
-        results = pipe(text[:8000])   # cap at 8k chars to stay within context
+        pipe = _get_pipeline()
     except Exception:
         return []
 
     entities = []
-    seen     = set()
+    seen = set()
 
-    for r in results:
-        word  = r.get("word", "").strip()
-        label = r.get("entity_group", "")
-        score = float(r.get("score", 0.0))
-
-        if not word or len(word) < 2:
-            continue
-        if score < threshold:
-            continue
-
-        # Map to our EntityType
-        entity_type = HF_LABEL_MAP.get(label, "OTHER")
-        if entity_type == "OTHER":
-            continue   # skip unmapped / low-value labels
-
-        # Clean BERT artefacts: ## prefixes from subword tokenisation
-        word = word.replace(" ##", "").replace("##", "").strip()
-        if not word:
-            continue
-
-        # Drop single-character fragments and very common short words
-        if len(word) <= 2:
-            continue
-        if word.lower() in {"the", "a", "an", "of", "in", "to", "is", "are", "was",
-                             "low", "high", "new", "old", "non", "pre", "pro", "anti"}:
-            continue
-
-        # Prefer offsets from HF pipeline — avoids always picking first occurrence.
-        start = int(r.get("start", -1))
-        end   = int(r.get("end", -1))
-        if start >= 0 and end > start:
-            word = text[start:end]  # exact span from original text, correct casing
-        else:
-            # Fallback: BERT hyphen normalization then text search
-            word_norm = word.replace(" - ", "-").replace("- ", "-").replace(" -", "-")
-            if word_norm.lower() not in text.lower() and word.lower() not in text.lower():
+    for w_offset, w_text in _split_text_windows(text, max_chars=max_chars):
+        try:
+            results = pipe(w_text)
+        except Exception:
+            try:
+                results = pipe(w_text, truncation=True)
+            except Exception:
                 continue
-            if word_norm.lower() in text.lower():
-                word = word_norm
-            start = text.lower().find(word.lower())
-            end   = start + len(word) if start >= 0 else -1
 
-        # Verbatim check
-        if word.lower() not in text.lower():
-            continue
+        for r in results:
+            word  = r.get("word", "").strip()
+            label = r.get("entity_group", "")
+            score = float(r.get("score", 0.0))
 
-        # Dedup
-        key = word.lower()
-        if key in seen:
-            continue
-        seen.add(key)
+            if not word or len(word) < 2:
+                continue
+            if score < threshold:
+                continue
 
-        entities.append({
-            "text":       word,
-            "normalized": key,
-            "label":      entity_type,
-            "start":      start,
-            "end":        end,
-            "negated":    False,
-            "assertion":  "PRESENT",
-            "confidence": round(score, 3),
-            "source":     "hf_ner",
-        })
+            entity_type = HF_LABEL_MAP.get(label, "OTHER")
+            if entity_type == "OTHER":
+                continue
+
+            # Clean BERT subword tokenization artefacts
+            word = word.replace(" ##", "").replace("##", "").strip()
+            if not word or len(word) <= 2:
+                continue
+            if word.lower() in {"the", "a", "an", "of", "in", "to", "is", "are", "was",
+                                 "low", "high", "new", "old", "non", "pre", "pro", "anti"}:
+                continue
+
+            local_start = int(r.get("start", -1))
+            local_end   = int(r.get("end", -1))
+            if local_start >= 0 and local_end > local_start:
+                start = w_offset + local_start
+                end   = w_offset + local_end
+                if 0 <= start < end <= len(text):
+                    word = text[start:end]
+                else:
+                    start = text.lower().find(word.lower(), w_offset)
+                    end   = start + len(word) if start >= 0 else -1
+            else:
+                word_norm = word.replace(" - ", "-").replace("- ", "-").replace(" -", "-")
+                start = text.lower().find(word_norm.lower(), w_offset)
+                if start < 0:
+                    start = text.lower().find(word.lower(), w_offset)
+                end = start + len(word) if start >= 0 else -1
+
+            if start < 0 or word.lower() not in text.lower():
+                continue
+
+            key = word.lower()
+            # Deduplicate by span to preserve repeated mentions at distinct offsets
+            span_key = (key, start, end)
+            if span_key in seen:
+                continue
+            seen.add(span_key)
+
+            entities.append({
+                "text":           word,
+                "normalized":     key,
+                "label":          entity_type,
+                "start":          start,
+                "end":            end,
+                "negated":        False,
+                "assertion":      "PRESENT",
+                "confidence":     round(score, 3),
+                "ner_confidence": round(score, 3),
+                "source":         "hf_ner",
+            })
 
     return entities

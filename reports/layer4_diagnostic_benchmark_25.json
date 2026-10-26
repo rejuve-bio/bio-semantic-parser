@@ -1,0 +1,600 @@
+[
+  {
+    "id": "DIAG_01",
+    "text": "SIRT1 upregulates FOXO3 expression in human fibroblasts.",
+    "gold_entities": [
+      {
+        "text": "SIRT1",
+        "label": "GENE",
+        "start": 0,
+        "end": 5,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "FOXO3",
+        "label": "GENE",
+        "start": 18,
+        "end": 23,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "human fibroblasts",
+        "label": "CELL_TYPE",
+        "start": 38,
+        "end": 55,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_02",
+    "text": "TP53 inhibits angiogenesis, whereas mutant TP53 promotes metastasis in osteosarcoma.",
+    "gold_entities": [
+      {
+        "text": "TP53",
+        "label": "GENE",
+        "start": 0,
+        "end": 4,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "TP53",
+        "label": "GENE",
+        "start": 43,
+        "end": 47,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "osteosarcoma",
+        "label": "DISEASE",
+        "start": 71,
+        "end": 83,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_03",
+    "text": "There was no evidence of lung carcinoma in the biopsied tissue.",
+    "gold_entities": [
+      {
+        "text": "lung carcinoma",
+        "label": "DISEASE",
+        "start": 25,
+        "end": 39,
+        "negated": true,
+        "assertion": "ABSENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_04",
+    "text": "BRCA1 expression was elevated, but not TP53 in primary breast tumors.",
+    "gold_entities": [
+      {
+        "text": "BRCA1",
+        "label": "GENE",
+        "start": 0,
+        "end": 5,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "TP53",
+        "label": "GENE",
+        "start": 39,
+        "end": 43,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "breast tumors",
+        "label": "DISEASE",
+        "start": 55,
+        "end": 68,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_05",
+    "text": "Not only was VEGF detected, but EGFR phosphorylation was also significantly enhanced.",
+    "gold_entities": [
+      {
+        "text": "VEGF",
+        "label": "GENE",
+        "start": 13,
+        "end": 17,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "EGFR",
+        "label": "GENE",
+        "start": 32,
+        "end": 36,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_06",
+    "text": "In control cultures, apoptosis was absent following metformin treatment.",
+    "gold_entities": [
+      {
+        "text": "apoptosis",
+        "label": "BIOLOGICAL_PROCESS",
+        "start": 21,
+        "end": 30,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "metformin",
+        "label": "DRUG",
+        "start": 52,
+        "end": 61,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_07",
+    "text": "The patient showed failure to respond to imatinib therapy for chronic myeloid leukemia.",
+    "gold_entities": [
+      {
+        "text": "imatinib",
+        "label": "DRUG",
+        "start": 41,
+        "end": 49,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "chronic myeloid leukemia",
+        "label": "DISEASE",
+        "start": 62,
+        "end": 86,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_08",
+    "text": "Pembrolizumab improved progression-free survival, whereas chemotherapy failed to show benefit.",
+    "gold_entities": [
+      {
+        "text": "Pembrolizumab",
+        "label": "DRUG",
+        "start": 0,
+        "end": 13,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "chemotherapy",
+        "label": "CLINICAL_INTERVENTION",
+        "start": 58,
+        "end": 70,
+        "negated": true,
+        "assertion": "ABSENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_09",
+    "text": "Possible mutation in KRAS was suspected in the colon adenocarcinoma specimen.",
+    "gold_entities": [
+      {
+        "text": "KRAS",
+        "label": "GENE",
+        "start": 21,
+        "end": 25,
+        "negated": false,
+        "assertion": "POSSIBLE"
+      },
+      {
+        "text": "colon adenocarcinoma",
+        "label": "DISEASE",
+        "start": 47,
+        "end": 67,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_10",
+    "text": "The subject presented with a prior history of Type 2 Diabetes and hypertension.",
+    "gold_entities": [
+      {
+        "text": "Type 2 Diabetes",
+        "label": "DISEASE",
+        "start": 46,
+        "end": 61,
+        "negated": false,
+        "assertion": "HISTORICAL"
+      },
+      {
+        "text": "hypertension",
+        "label": "DISEASE",
+        "start": 66,
+        "end": 78,
+        "negated": false,
+        "assertion": "HISTORICAL"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_11",
+    "text": "Administration of rapamycin extended lifespan without hepatic toxicity in mice.",
+    "gold_entities": [
+      {
+        "text": "rapamycin",
+        "label": "DRUG",
+        "start": 18,
+        "end": 27,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "hepatic toxicity",
+        "label": "SYMPTOM",
+        "start": 54,
+        "end": 70,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "mice",
+        "label": "ORGANISM",
+        "start": 74,
+        "end": 78,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_12",
+    "text": "Neither HER2 nor ERBB3 was amplified in the non-small cell lung cancer cohort.",
+    "gold_entities": [
+      {
+        "text": "HER2",
+        "label": "GENE",
+        "start": 8,
+        "end": 12,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "ERBB3",
+        "label": "GENE",
+        "start": 17,
+        "end": 22,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "non-small cell lung cancer",
+        "label": "DISEASE",
+        "start": 44,
+        "end": 70,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_13",
+    "text": "In uninfected control cells, viral RNA was not detected by RT-PCR.",
+    "gold_entities": [
+      {
+        "text": "viral RNA",
+        "label": "TRANSCRIPT",
+        "start": 29,
+        "end": 38,
+        "negated": true,
+        "assertion": "ABSENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_14",
+    "text": "Coronary artery bypass grafting was performed after aspirin administration.",
+    "gold_entities": [
+      {
+        "text": "Coronary artery bypass grafting",
+        "label": "PROCEDURE",
+        "start": 0,
+        "end": 31,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "aspirin",
+        "label": "DRUG",
+        "start": 52,
+        "end": 59,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_15",
+    "text": "Treatment with atorvastatin demonstrated no significant reduction in serum amyloid A.",
+    "gold_entities": [
+      {
+        "text": "atorvastatin",
+        "label": "DRUG",
+        "start": 15,
+        "end": 27,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "serum amyloid A",
+        "label": "PROTEIN",
+        "start": 69,
+        "end": 84,
+        "negated": true,
+        "assertion": "ABSENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_16",
+    "text": "There is no doubt that APOE4 increases the risk of Alzheimer disease.",
+    "gold_entities": [
+      {
+        "text": "APOE4",
+        "label": "GENE",
+        "start": 23,
+        "end": 28,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "Alzheimer disease",
+        "label": "DISEASE",
+        "start": 51,
+        "end": 68,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_17",
+    "text": "The SWI/SNF chromatin remodeling complex regulates gene expression in liver tissue.",
+    "gold_entities": [
+      {
+        "text": "SWI/SNF chromatin remodeling complex",
+        "label": "MACROMOLECULAR_COMPLEX",
+        "start": 4,
+        "end": 40,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "liver tissue",
+        "label": "TISSUE",
+        "start": 70,
+        "end": 82,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_18",
+    "text": "Tumor cells exhibited apoptosis rather than necrosis following doxorubicin exposure.",
+    "gold_entities": [
+      {
+        "text": "apoptosis",
+        "label": "BIOLOGICAL_PROCESS",
+        "start": 22,
+        "end": 31,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "necrosis",
+        "label": "BIOLOGICAL_PROCESS",
+        "start": 44,
+        "end": 52,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "doxorubicin",
+        "label": "DRUG",
+        "start": 63,
+        "end": 74,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_19",
+    "text": "The patient was unable to tolerate cisplatin due to nephrotoxicity.",
+    "gold_entities": [
+      {
+        "text": "cisplatin",
+        "label": "DRUG",
+        "start": 35,
+        "end": 44,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "nephrotoxicity",
+        "label": "SYMPTOM",
+        "start": 52,
+        "end": 66,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_20",
+    "text": "Loss-of-function variants in CFTR cause cystic fibrosis with pancreatic insufficiency.",
+    "gold_entities": [
+      {
+        "text": "CFTR",
+        "label": "GENE",
+        "start": 29,
+        "end": 33,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "cystic fibrosis",
+        "label": "DISEASE",
+        "start": 40,
+        "end": 55,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "pancreatic insufficiency",
+        "label": "DISEASE",
+        "start": 61,
+        "end": 85,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_21",
+    "text": "A negative troponin test rules out acute myocardial infarction in the emergency department.",
+    "gold_entities": [
+      {
+        "text": "troponin",
+        "label": "PROTEIN",
+        "start": 11,
+        "end": 19,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "acute myocardial infarction",
+        "label": "DISEASE",
+        "start": 35,
+        "end": 62,
+        "negated": true,
+        "assertion": "ABSENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_22",
+    "text": "Initially, fever was absent, but later high fever developed during sepsis.",
+    "gold_entities": [
+      {
+        "text": "fever",
+        "label": "SYMPTOM",
+        "start": 11,
+        "end": 16,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "fever",
+        "label": "SYMPTOM",
+        "start": 44,
+        "end": 49,
+        "negated": false,
+        "assertion": "PRESENT"
+      },
+      {
+        "text": "sepsis",
+        "label": "DISEASE",
+        "start": 67,
+        "end": 73,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_23",
+    "text": "These findings potentially suggest an oncogenic role for MYC in glioblastoma.",
+    "gold_entities": [
+      {
+        "text": "MYC",
+        "label": "GENE",
+        "start": 57,
+        "end": 60,
+        "negated": false,
+        "assertion": "POSSIBLE"
+      },
+      {
+        "text": "glioblastoma",
+        "label": "DISEASE",
+        "start": 64,
+        "end": 76,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_24",
+    "text": "The patient denies chest pain or shortness of breath on exertion.",
+    "gold_entities": [
+      {
+        "text": "chest pain",
+        "label": "SYMPTOM",
+        "start": 19,
+        "end": 29,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "shortness of breath",
+        "label": "SYMPTOM",
+        "start": 33,
+        "end": 52,
+        "negated": true,
+        "assertion": "ABSENT"
+      }
+    ]
+  },
+  {
+    "id": "DIAG_25",
+    "text": "Adjuvant radiotherapy is not recommended for stage I seminoma patients.",
+    "gold_entities": [
+      {
+        "text": "Adjuvant radiotherapy",
+        "label": "CLINICAL_INTERVENTION",
+        "start": 0,
+        "end": 21,
+        "negated": true,
+        "assertion": "ABSENT"
+      },
+      {
+        "text": "seminoma",
+        "label": "DISEASE",
+        "start": 53,
+        "end": 61,
+        "negated": false,
+        "assertion": "PRESENT"
+      }
+    ]
+  }
+]

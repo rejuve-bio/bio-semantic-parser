@@ -1,12 +1,9 @@
 """
 Layer 4 — Pre-Extraction Orchestrator
-
-Runs three scispaCy NER models in ensemble, merges spans, applies PubTator3
-normalization for PubMed articles, then classifies each entity's containing
-clause for negation using an NLI cross-encoder.
 """
 import os
 import spacy
+
 from src.preextraction.ner_tagger import NERTagger
 from src.preextraction.negation_detector import NegationDetector
 from src.preextraction.doi_extractor import DOIExtractor
@@ -64,13 +61,13 @@ class Preextractor:
             doc = nlp(text)
             span_data += [(e.start_char, e.end_char, e.label_) for e in doc.ents]
 
-        final_ents = []
+        all_spans = []
         for start, end, label in span_data:
             span = base_doc.char_span(start, end, label=label, alignment_mode="expand")
             if span is not None:
-                final_ents.append(span)
+                all_spans.append(span)
 
-        base_doc.ents = spacy.util.filter_spans(final_ents)
+        base_doc.ents = spacy.util.filter_spans(all_spans)
         return base_doc
 
     def process(self, chunk: dict) -> dict:
@@ -81,10 +78,15 @@ class Preextractor:
         doc_id      = chunk.get("document_id", "")
         source_name = chunk.get("source_name", "")
 
+        # Candidates from supplemental sources, reconciled against the ensemble
+        # in one pass below (_resolve_overlaps).
+        extra_entities = []
+
         if source_name == "pubmed" and doc_id and len(doc_id) <= 10:
             pt_entities = fetch_pubtator_entities(doc_id)
             if pt_entities:
-                entities = _merge_entities(entities, pt_entities)
+                # PubTator3 offsets are article-level, not chunk-local.
+                extra_entities += _relocalize_to_chunk(pt_entities, text)
 
         # ── HuggingFace clinical NER — adds Diagnostic_procedure, Therapeutic_procedure,
         #    Medication, Sign_symptom, Disease_disorder, Lab_value that scispaCy misses.
@@ -93,9 +95,23 @@ class Preextractor:
             if _hf_ok():
                 hf_ents = _hf_tag(text)
                 if hf_ents:
-                    entities = _merge_entities(entities, hf_ents)
+                    extra_entities += hf_ents
         except Exception:
             pass   # never break the pipeline if optional tagger fails
+
+        # ── GLiNER-BioMed Base — zero-shot NER, covers most of the ~83-type
+        #    taxonomy that scispaCy's fixed label sets can't recognize at all.
+        try:
+            from src.preextraction.gliner_tagger import tag_entities as _gliner_tag, should_run as _gliner_ok
+            if _gliner_ok():
+                gliner_ents = _gliner_tag(text)
+                if gliner_ents:
+                    extra_entities += gliner_ents
+        except Exception:
+            pass   # never break the pipeline if optional tagger fails
+
+        if extra_entities:
+            entities = _resolve_overlaps(entities + extra_entities)
 
         negation   = self.negation_detector.process(entities, doc)
         doi        = self.doi_extractor.extract(text)
@@ -129,23 +145,101 @@ class Preextractor:
             return list(pool.map(self.process, chunks))
 
 
-def _merge_entities(ensemble: list, extra: list) -> list:
-    """Merge entity lists by surface text. If extra has richer normalization (e.g. PubTator identifier), update the existing entry."""
-    merged = []
-    by_key = {}
-    for e in ensemble:
-        key = (e.get("text") or "").lower()
-        if not key or key in by_key:
+def _relocalize_to_chunk(entities: list, chunk_text: str) -> list:
+    """Recompute start/end for entities whose offsets aren't chunk-local (e.g.
+    PubTator3's article-level offsets). Finds all distinct occurrences of the entity
+    in this chunk, preserving accurate character positions without first-occurrence bias."""
+    if not chunk_text or not entities:
+        return []
+
+    import re
+    result = []
+    seen_entries = set()
+
+    for e in entities:
+        text = (e.get("text") or "").strip()
+        if not text or len(text) < 2:
             continue
-        by_key[key] = e.copy()
-        merged.append(by_key[key])
-    for e in extra:
-        key = (e.get("text") or "").lower()
-        if not key:
-            continue
-        if key not in by_key:
-            by_key[key] = e.copy()
-            merged.append(by_key[key])
-        elif "identifier" in e or e.get("source") == "pubtator3":
-            by_key[key].update(e)
-    return merged
+
+        label = e.get("label", "")
+        identifier = e.get("identifier", "")
+        norm = e.get("normalized", text.lower())
+
+        # Word-boundary search avoids sub-word partial matches (e.g. 'cat' in 'indicate')
+        pattern = re.compile(rf'(?<!\w){re.escape(text)}(?!\w)', re.IGNORECASE)
+        matches = list(pattern.finditer(chunk_text))
+
+        if matches:
+            for m in matches:
+                dedup_key = (m.start(), m.end(), label, identifier, norm)
+                if dedup_key not in seen_entries:
+                    seen_entries.add(dedup_key)
+                    entry = dict(e, text=chunk_text[m.start():m.end()], start=m.start(), end=m.end())
+                    result.append(entry)
+        elif re.search(r'\W', text):
+            # Fallback to literal search only for non-alphanumeric symbols like '[18F]'
+            start_pos = 0
+            lower_chunk = chunk_text.lower()
+            lower_text = text.lower()
+            while True:
+                idx = lower_chunk.find(lower_text, start_pos)
+                if idx < 0:
+                    break
+                dedup_key = (idx, idx + len(text), label, identifier, norm)
+                if dedup_key not in seen_entries:
+                    seen_entries.add(dedup_key)
+                    entry = dict(e, text=chunk_text[idx:idx + len(text)], start=idx, end=idx + len(text))
+                    result.append(entry)
+                start_pos = idx + max(1, len(text))
+
+    return result
+
+
+# Last-resort tie-break for identical length + confidence — fixed and explicit,
+# not accidental input order.
+_SOURCE_PRIORITY = {"ensemble": 3, "pubtator3": 2, "gliner": 1, "hf_ner": 0}
+
+
+def _resolve_overlaps(entities: list) -> list:
+    """Reconcile overlapping spans across NER sources sharing chunk-local
+    coordinates. Longest span wins; ties broken by confidence, then
+    _SOURCE_PRIORITY, then leftmost start. Exact-span duplicates fold into
+    the winner (differing label kept as alt_label/alt_confidence, not
+    dropped); partial overlaps with a higher-priority span are dropped."""
+    valid = [e for e in entities if e.get("start", -1) >= 0 and e.get("end", -1) > e.get("start", -1)]
+
+    def sort_key(e):
+        return (
+            e["end"] - e["start"],
+            e.get("confidence") or 0.0,
+            _SOURCE_PRIORITY.get(e.get("source"), 0),
+            -e["start"],
+        )
+
+    accepted, ranges = [], []
+    for cand in sorted(valid, key=sort_key, reverse=True):
+        c_start, c_end = cand["start"], cand["end"]
+        exact_match = None
+        overlaps    = False
+        for i, (a_start, a_end) in enumerate(ranges):
+            if c_start < a_end and c_end > a_start:
+                overlaps = True
+                if (a_start, a_end) == (c_start, c_end):
+                    exact_match = i
+                break
+        if exact_match is not None:
+            winner = accepted[exact_match]
+            if cand.get("label") and cand["label"] != winner.get("label"):
+                winner["alt_label"]      = cand["label"]
+                winner["alt_confidence"] = cand.get("confidence")
+            for k, v in cand.items():
+                if k not in winner:
+                    winner[k] = v
+            winner["confidence"] = max(winner.get("confidence") or 0.0, cand.get("confidence") or 0.0)
+            winner["ner_confidence"] = winner["confidence"]
+        elif not overlaps:
+            accepted.append(cand)
+            ranges.append((c_start, c_end))
+
+    accepted.sort(key=lambda e: e["start"])
+    return accepted
