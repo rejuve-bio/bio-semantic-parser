@@ -1,6 +1,7 @@
 """Extraction confidence from five evidence channels (rank-weighted, adapted from Open Targets)."""
 import re
 
+from src.sentences import split_sentences as _split_sentences
 
 # Channel weights (project's choice): wording certainty > statistics > section/claim > NLI/LLM.
 CHANNEL_WEIGHTS = {
@@ -47,7 +48,8 @@ def score(
                                  max_score=_hedge_limit(c2))
 
     # Negated facts are scored like positive ones: a definite negative finding is strong evidence.
-    combined = _combine_channels([c1, c2, c3, c4, c5])
+    # A hedged fact cannot score above its certainty level; the rank weighting would otherwise hide it.
+    combined = min(_combine_channels([c1, c2, c3, c4, c5]), _hedge_limit(c2))
 
     return round(min(max(combined, 0.0), 1.0), 4)
 
@@ -60,14 +62,6 @@ _NEGATION_NEAR = re.compile(
     re.I
 )
 
-
-# A period after a single letter ends a sentence unless a lowercase word follows (C. elegans, E. coli);
-# 'vitamin D. FOXO3 …' is two sentences.
-_SENTENCE_END = re.compile(r"(?<=[.!?])(?<!\b[A-Za-z]\.)\s+|(?<=\b[A-Za-z]\.)\s+(?![a-z])")
-
-# Split text into sentences while handling common abbreviations correctly
-def _split_sentences(text: str) -> list:
-    return _SENTENCE_END.split(text)
 
 # Construct the hypothesis sentence for NLI based on the fact and its negation status
 def _hypothesis(subject: str, relation: str, obj: str, negated: bool = False) -> str:
@@ -287,8 +281,8 @@ def _channel_direct_claim(text: str, subj_key: str, obj_key: str) -> float:
 
 
 def _hedge_limit(factuality: float) -> float:
-    """Upper bound for C5: a hedged sentence (probable/possible/doubtful) cannot support a claim beyond its
-    own certainty; unhedged wording (fact or none) is not capped."""
+    """Upper bound for C5 and the final score: a hedged sentence (probable/possible/doubtful) cannot support
+    a claim beyond its own certainty; unhedged wording (fact or none) is not capped."""
     return factuality if factuality in _HEDGED else 1.0
 
 
@@ -345,7 +339,7 @@ def explain(
     c5 = _channel_nli_entailment(best_sent, hyp2, llm_fallback=llm_raw,
                                  max_score=_hedge_limit(c2))
 
-    combined = _combine_channels([c1, c2, c3, c4, c5])
+    combined = min(_combine_channels([c1, c2, c3, c4, c5]), _hedge_limit(c2))
 
     return {
         "final_score":          round(min(max(combined, 0.0), 1.0), 4),
